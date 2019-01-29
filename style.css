@@ -96,15 +96,53 @@ body{
 	height: 35vw;
 	margin: 0;
 	padding: 0;
+	overflow: hidden;
 }
 #embed iframe{
-	margin: auto;
 	position: absolute;
-	right: 10%;
+	right: -40%;
 	top: 10%;
+	opacity: 0;
+	transition: all 1s;
 }
 #embed svg{
 	position: absolute;
+}
+#rewind-text{
+	position: absolute;
+	width: 30%;
+	height: 40%;
+	left: -30%;
+	top: 15%;
+	opacity: 0;
+	transition: all 1s;
+	font-family: 'Raleway', sans-serif;
+	color: rgb(35,35,35);
+}
+#rewind{
+	width: 100%;
+	height: 50%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	text-align: center;
+	padding:0;
+	margin: 0;
+	font-size: 4vw;
+	padding-top: 1vw;
+	font-weight: bold;
+}
+#rewind-year{
+	width: 100%;
+	height: 50%;
+	position: absolute;
+	top: 50%;
+	left: 0;
+	text-align: center;
+	padding:0;
+	margin: 0;
+	font-size: 3vw;
+	font-weight: bolder;
 }
 #middle_text{
 	position: relative;

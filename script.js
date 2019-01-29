@@ -1,6 +1,14 @@
+var scrollload = false;
+
 function initialize(){
   update_time();
   modal();
+  typewriter();
+  window.addEventListener("scroll", function(){
+    if(!scrollload){
+      slidein();
+    }
+  });
 }
 
 function update_time(){
@@ -44,4 +52,37 @@ function modal(){
             modal.style.display = "none";
         }
     });
+}
+function typewriter(){
+  var caption = document.getElementById("caption");
+  var text = "THE FEST BEGINS IN  ";
+  var texti = 0;
+  var textadd = function(){
+    if(texti < text.length){
+      caption.innerHTML = text.slice(0,texti)+'_';
+      texti++;
+      setTimeout(textadd,250);
+    }
+    else{
+      if(caption.innerHTML == "THE FEST BEGINS IN _"){
+        caption.innerHTML = "THE FEST BEGINS IN &nbsp;&nbsp;"
+      }
+      else{
+        caption.innerHTML = "THE FEST BEGINS IN _"
+      }
+      setTimeout(textadd,500);
+    }
+  }
+  textadd();
+}
+function slidein(){
+  var el = document.getElementById('embed');
+  var ypos = el.offsetTop - document.documentElement.scrollTop;
+  if(ypos < (window.innerHeight/2)){
+      document.getElementById('youtube').style.right = "10%";
+      document.getElementById('youtube').style.opacity = "1";
+      document.getElementById('rewind-text').style.left = "5%";
+      document.getElementById('rewind-text').style.opacity = "1";
+      scrollload = true;
+  }
 }

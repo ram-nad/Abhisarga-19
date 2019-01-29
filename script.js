@@ -77,8 +77,8 @@ function typewriter(){
 }
 function slidein(){
   var el = document.getElementById('embed');
-  var ypos = el.offsetTop - document.documentElement.scrollTop;
-  if(ypos < (window.innerHeight/2)){
+  var ypos = el.offsetTop - document.documentElement.scrollTop + el.offsetHeight;
+  if(ypos < window.innerHeight){
       document.getElementById('youtube').style.right = "10%";
       document.getElementById('youtube').style.opacity = "1";
       document.getElementById('rewind-text').style.left = "5%";

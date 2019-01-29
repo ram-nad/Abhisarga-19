@@ -1,3 +1,8 @@
+function initialize(){
+  update_time();
+  modal();
+}
+
 function update_time(){
     var calcNewYear = setInterval(function(){
     date_now = new Date();
@@ -22,4 +27,21 @@ function update_time(){
     minute_section.innerHTML = minutes;
     second_section.innerHTML = seconds;
   },1000);
+}
+
+function modal(){
+    var modal = document.getElementById("showmap");
+    var btn = document.getElementById("map");
+    var span = document.getElementById("modal-close");
+    btn.addEventListener("click", function() {
+        modal.style.display = "block";
+    });
+    span.addEventListener("click", function() {
+        modal.style.display = "none";
+    });
+    window.addEventListener("click", function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    });
 }

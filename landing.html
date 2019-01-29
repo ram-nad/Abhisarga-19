@@ -9,7 +9,7 @@
 		<link href="https://fonts.googleapis.com/css?family=Caveat:700|Roboto" rel="stylesheet">
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
 	</head>
-	<body onload="update_time()">
+	<body onload="initialize()">
 		<div id="background">
         <div id="banner">
           <div id="logo">
@@ -66,12 +66,31 @@
 				<span id="middle_text_2u">UNLIMITED&nbsp&nbsp</span>
 				<span  id="middle_text_2e">ENTERTAINMENT</span>
 			</div>
+			<div id="middle_text_line">
+			</div>
 		</div>
 		<div id="embed">
-			<iframe width="70%" height="100%" src="https://www.youtube.com/embed/Z_GmMugjBBY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			<svg height="100%" width="100%" viewBox="0 0 100 100" preserveAspectRatio="none">
+				<path d="M0,50 Q25,70 50,50 Q75,30 100,50" stroke="#00ab9f"  fill="transparent" stroke-width="0.6"/>
+				<path d="M0,55 Q25,70 50,50 Q75,30 100,45" stroke="#00ab9f"  fill="transparent" stroke-width="0.6"/>
+				<ellipse cx="20" cy="40" rx="8.75" ry="25" fill="#00ab9f" />
+				<ellipse cx="20" cy="40" rx="5.25" ry="15" fill="#00ed4c" style="filter: drop-shadow( 0px 0px 0.1vw #007268);" "/>
+			</svg>
+			<iframe width="40%" height="80%" src="https://www.youtube.com/embed/Z_GmMugjBBY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 		</div>
 		<div id="footer">
 			<div id="licon">
+			</div>
+			<div id="footer-base">
+				<svg width="100%" height="100%" viewBox="0 0 800 400" preserveAspectRatio="none">
+					<linearGradient id="gradfill" x1="0%" y1="0%" x2="100%" y2="0%">
+						<stop offset="0%" style="stop-color:#00738b;stop-opacity:1" />
+						<stop offset="30%" style="stop-color:#008793;stop-opacity:1" />
+						<stop offset="60%" style="stop-color:#00a088;stop-opacity:1" />
+						<stop offset="100%" style="stop-color:#00d85d;stop-opacity:1" />
+					</linearGradient>
+					<path d="M0,400 L0,300 C80,400 240,390 300,350 Q600,150 800,320 L800,400 Z" fill="url(#gradfill)"></path>
+				</svg>
 			</div>
 			<div id="footer-link">
 					<a href="#" class="fab fa-facebook-f"></a>
@@ -88,16 +107,11 @@
 				<br>
 				<button id="map">View Map</button>
 			</div>
-			<div id="footer-base">
-				<svg width="100%" height="100%" viewBox="0 0 800 400" preserveAspectRatio="none">
-					<linearGradient id="gradfill" x1="0%" y1="0%" x2="100%" y2="0%">
-						<stop offset="0%" style="stop-color:#00738b;stop-opacity:1" />
-						<stop offset="30%" style="stop-color:#008793;stop-opacity:1" />
-						<stop offset="60%" style="stop-color:#00a088;stop-opacity:1" />
-						<stop offset="100%" style="stop-color:#00d85d;stop-opacity:1" />
-					</linearGradient>
-					<path d="M0,400 L0,300 C80,400 240,390 300,350 Q600,150 800,320 L800,400 Z" fill="url(#gradfill)"></path>
-				</svg>
+		</div>
+		<div id="showmap">
+			<div id="modal-content">
+				<span id="modal-close">&times;</span>
+				<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d4385.181060439306!2d80.02612830000517!3d13.55731090578575!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xadb0842ffc2719e4!2sIndian+Institute+of+Information+Technology+Sri+City!5e0!3m2!1sen!2sin!4v1548770638220" width="100%" height="90%" frameborder="0" style="border:0" allowfullscreen></iframe>
 			</div>
 		</div>
 	</body>

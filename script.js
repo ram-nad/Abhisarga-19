@@ -1,5 +1,5 @@
 var scrollload = false;
-var scrollsec = 1;
+//var scrollsec = 1;
 
 function initialize(){
   update_time();
@@ -10,17 +10,17 @@ function initialize(){
     if(!scrollload){
       slidein();
     }
-    var scrollh = document.getElementById('sec').offsetTop - document.documentElement.scrollTop;
-    if(scrollsec == 1){
-      if(scrollh < window.innerHeight){
-        document.documentElement.scrollTop = document.getElementById('sec').offsetTop;
-      }
-    }
-    else if(scrollsec == 2){
-      if(scrollh > 0){
-        document.documentElement.scrollTop = 0;
-      }
-    }
+    // var scrollh = document.getElementById('sec').offsetTop - document.documentElement.scrollTop;
+    // if(scrollsec == 1){
+    //   if(scrollh < window.innerHeight){
+    //     document.documentElement.scrollTop = document.getElementById('sec').offsetTop;
+    //   }
+    // }
+    // else if(scrollsec == 2){
+    //   if(scrollh > 0){
+    //     document.documentElement.scrollTop = 0;
+    //   }
+    // }
   });
   slidein();
 }

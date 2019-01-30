@@ -8,7 +8,7 @@ body{
 #sec{
 	position: relative;
 	height: 100vh;
-	min-height: 1500px;
+	min-height: 1300px;
 	width: 100%;
 	margin: 0;
 	padding: 0;
@@ -95,6 +95,7 @@ body{
 	background-image: linear-gradient(to bottom, #00eb5e 10%, #00de9d 40%, #26d7aa 60%, #1fc8b4 80%, #1bc7b4 100%);
 	width: 100%;
 	height: 20%;
+	box-shadow: 0 0 0.1em #000;
 }
 .timer-text{
 	position: relative;
@@ -120,6 +121,8 @@ body{
 	overflow: hidden;
 }
 #embed iframe{
+	width: 40%;
+	height: 80%;
 	position: absolute;
 	right: -40%;
 	top: 10%;

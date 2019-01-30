@@ -9,6 +9,7 @@ function initialize(){
       slidein();
     }
   });
+  slidein();
 }
 
 function update_time(){

@@ -220,6 +220,16 @@ body{
 	width: 25%;
 	border-bottom: 0.1vw solid white;
 }
+#footer-logo{
+	position: relative;
+	width: 12vw;
+	height: 12vw;
+	top: 2vw;
+}
+#footer-logo img{
+	height: 100%;
+	width: 100%;
+}
 .fab{
 	text-decoration: none;
 	width: 2.5vw;
@@ -376,6 +386,10 @@ body{
 	#footer-info{
 		font-size: 1.4vw;
 	}
+	#footer-logo{
+		width: 11vw;
+		height: 11vw;
+	}
 	#modal-content{
 		left: 25%;
 		width: 50%;
@@ -419,6 +433,10 @@ body{
 	#footer-info{
 		font-size: 1.6vw;
 	}
+	#footer-logo{
+		width: 10vw;
+		height: 10vw;
+	}
 	#modal-content{
 		left: 10%;
 		width: 80%;
@@ -461,6 +479,10 @@ body{
 	}
 	#footer-info{
 		font-size: 1.7vw;
+	}
+	#footer-logo{
+		width: 8vw;
+		height: 8vw;
 	}
 	#modal-content{
 		left: 5%;

@@ -1,3 +1,6 @@
+html{
+	scroll-behavior: smooth;
+}
 body{
 	margin: 0px;
 	padding: 0px;
@@ -18,7 +21,7 @@ body{
 	margin: 0 auto;
 	box-sizing: border-box;
 	padding: 0;
-	background: rgba(45,38,40,0.9);
+	background: rgba(45,38,40,0);
 }
 #logo{
 	width: 100%;
@@ -38,7 +41,7 @@ body{
 	font-size: 3vw;
 	color: #fff;
 	text-align: center;
-	background: rgba(0,0,0,0.8);
+	background: rgba(0,0,0,0.4);
 	font-family: 'Roboto', sans-serif;
 }
 #timer{
@@ -196,7 +199,6 @@ body{
   width: 100%;
 	top: 7vw;
   background-color: #262827;
-	overflow: hidden;
 	box-shadow: 0 0 1vw #000
 }
 #licon{
@@ -206,7 +208,7 @@ body{
   bottom: 0;
   width: 40%;
   background-repeat: no-repeat;
-  height: 100%;
+  height: 110%;
   background-size: contain;
   background-image: url("icon.png");
 }
@@ -218,14 +220,23 @@ body{
 	right: 0;
 	display: flex;
 	flex-direction: row;
-	width: 25%;
+	width: 30%;
 	border-bottom: 0.1vw solid white;
+	font-size: 2vw;
+	font-family: 'Raleway', sans-serif;
+}
+#footer-link span{
+	color: #fff;
+	padding: 0.3vw 0;
+	font-weight: bold;
 }
 #footer-logo{
-	position: relative;
-	width: 12vw;
-	height: 12vw;
-	top: 2vw;
+	display: inline-block;
+	position: absolute;
+	left: -6vw;
+	top: -1vw;
+	width: 6vw;
+	height: 6vw;
 }
 #footer-logo img{
 	height: 100%;
@@ -235,7 +246,6 @@ body{
 	text-decoration: none;
 	width: 2.5vw;
 	height: 2.5vw;
-	font-size: 2vw;
 	padding: 0.5vw;
 	margin: 0 auto;
 	text-align: center;
@@ -284,7 +294,7 @@ body{
 #footer-info{
 	position: absolute;
 	right: 2vw;
-	bottom: 4vw;
+	bottom: 6vw;
   font-family: 'Roboto', sans-serif;
 	font-size: 1.2vw;
 	font-weight: bold;
@@ -292,7 +302,7 @@ body{
   margin: 0;
 	padding: 0;
 }
-#footer-info h4{
+#footer-info span{
 	font-size: 1.5em;
 }
 #map{
@@ -385,11 +395,12 @@ body{
 		font-size: 2.5vw;
 	}
 	#footer-info{
-		font-size: 1.4vw;
+		font-size: 1.6vw;
 	}
 	#footer-logo{
-		width: 11vw;
-		height: 11vw;
+		left: -6vw;
+		width: 6.2vw;
+		height: 6.2vw;
 	}
 	#modal-content{
 		left: 25%;
@@ -432,11 +443,12 @@ body{
 		font-size: 3vw;
 	}
 	#footer-info{
-		font-size: 1.6vw;
+		font-size: 1.7vw;
 	}
 	#footer-logo{
-		width: 10vw;
-		height: 10vw;
+		left: -7vw;
+		width: 6.7vw;
+		height: 6.7vw;
 	}
 	#modal-content{
 		left: 10%;
@@ -479,11 +491,12 @@ body{
 		font-size: 3.5vw;
 	}
 	#footer-info{
-		font-size: 1.7vw;
+		font-size: 1.8vw;
 	}
 	#footer-logo{
-		width: 8vw;
-		height: 8vw;
+		left: -8vw;
+		width: 7.2vw;
+		height: 7.2vw;
 	}
 	#modal-content{
 		left: 5%;

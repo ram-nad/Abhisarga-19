@@ -1,21 +1,45 @@
 var scrollload = false;
+var scrollsec = 1;
+var isscrolling = true;
 
 function initialize(){
   update_time();
   modal();
   typewriter();
+  setInterval(checksec, 800);
   window.addEventListener("scroll", function(){
     if(!scrollload){
       slidein();
+    }
+    var scrollh = document.getElementById('middle_text').offsetTop - document.documentElement.scrollTop;
+    //console.log(scrollh + ' ' + window.innerHeight)
+    if(scrollsec == 1){
+      if(scrollh < window.innerHeight){
+        document.documentElement.scrollTop = document.getElementById('middle_text').offsetTop;
+      }
+    }
+    else if(scrollsec == 2){
+      if(scrollh > 0){
+        document.documentElement.scrollTop = 0;
+      }
     }
   });
   slidein();
 }
 
+function checksec(){
+  if((document.getElementById('middle_text').offsetTop - document.documentElement.scrollTop) <= 0){
+    scrollsec = 2;
+  }
+  else{
+    scrollsec = 1;
+  }
+}
+
 function update_time(){
     var calcNewYear = setInterval(function(){
     date_now = new Date();
-    date_future = new Date(date_now.getFullYear(), 2, 22);
+    date_future = new Date(date_now.getFullYear(), 2, 29);
 
     seconds = Math.floor((date_future - (date_now))/1000);
     minutes = Math.floor(seconds/60);
@@ -56,7 +80,7 @@ function modal(){
 }
 function typewriter(){
   var caption = document.getElementById("caption");
-  var text = "THE FEST BEGINS IN  ";
+  var text = "CELEBRATION BEGINS IN  ";
   var texti = 0;
   var textadd = function(){
     if(texti < text.length){
@@ -65,11 +89,11 @@ function typewriter(){
       setTimeout(textadd,250);
     }
     else{
-      if(caption.innerHTML == "THE FEST BEGINS IN _"){
-        caption.innerHTML = "THE FEST BEGINS IN &nbsp;&nbsp;"
+      if(caption.innerHTML == "CELEBRATION BEGINS IN _"){
+        caption.innerHTML = "CELEBRATION BEGINS IN &nbsp;&nbsp;"
       }
       else{
-        caption.innerHTML = "THE FEST BEGINS IN _"
+        caption.innerHTML = "CELEBRATION BEGINS IN _"
       }
       setTimeout(textadd,500);
     }
@@ -79,7 +103,7 @@ function typewriter(){
 function slidein(){
   var el = document.getElementById('embed');
   var ypos = el.offsetTop - document.documentElement.scrollTop + el.offsetHeight;
-  if(ypos < window.innerHeight){
+  if(el.offsetHeight < ypos && ypos < window.innerHeight){
       document.getElementById('youtube').style.right = "10%";
       document.getElementById('youtube').style.opacity = "1";
       document.getElementById('rewind-text').style.left = "5%";

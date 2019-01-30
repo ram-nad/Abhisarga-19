@@ -1,21 +1,19 @@
 var scrollload = false;
 var scrollsec = 1;
-var isscrolling = true;
 
 function initialize(){
   update_time();
   modal();
   typewriter();
-  setInterval(checksec, 800);
+  setInterval(checksec, 1200);
   window.addEventListener("scroll", function(){
     if(!scrollload){
       slidein();
     }
-    var scrollh = document.getElementById('middle_text').offsetTop - document.documentElement.scrollTop;
-    //console.log(scrollh + ' ' + window.innerHeight)
+    var scrollh = document.getElementById('sec').offsetTop - document.documentElement.scrollTop;
     if(scrollsec == 1){
       if(scrollh < window.innerHeight){
-        document.documentElement.scrollTop = document.getElementById('middle_text').offsetTop;
+        document.documentElement.scrollTop = document.getElementById('sec').offsetTop;
       }
     }
     else if(scrollsec == 2){
@@ -28,7 +26,7 @@ function initialize(){
 }
 
 function checksec(){
-  if((document.getElementById('middle_text').offsetTop - document.documentElement.scrollTop) <= 0){
+  if((document.getElementById('sec').offsetTop - document.documentElement.scrollTop) <= 0){
     scrollsec = 2;
   }
   else{
@@ -101,9 +99,9 @@ function typewriter(){
   textadd();
 }
 function slidein(){
-  var el = document.getElementById('embed');
-  var ypos = el.offsetTop - document.documentElement.scrollTop + el.offsetHeight;
-  if(el.offsetHeight < ypos && ypos < window.innerHeight){
+  var el = document.getElementById('sec');
+  var ypos = el.offsetTop - document.documentElement.scrollTop;
+  if(ypos <= 0){
       document.getElementById('youtube').style.right = "10%";
       document.getElementById('youtube').style.opacity = "1";
       document.getElementById('rewind-text').style.left = "5%";

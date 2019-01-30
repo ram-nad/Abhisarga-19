@@ -5,6 +5,17 @@ body{
 	margin: 0px;
 	padding: 0px;
 }
+#sec{
+	position: relative;
+	height: 100vh;
+	min-height: 1500px;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
 #background{
 	box-shadow: 0 0 1vw #000;
 	width: 100%;
@@ -12,7 +23,7 @@ body{
 	padding: 0;
 	background-image: url('./image.jpg');
 	background-size: 100% 100%;
-	height: 40vw;
+	height: 75vh;
 }
 #banner{
 	position: relative;
@@ -21,7 +32,7 @@ body{
 	margin: 0 auto;
 	box-sizing: border-box;
 	padding: 0;
-	background: rgba(45,38,40,0);
+	background: rgba(0,0,0,0.8);
 }
 #logo{
 	width: 100%;
@@ -38,22 +49,29 @@ body{
 	padding: 0.5em 0;
 	width: 40%;
 	height: 2em;
-	font-size: 3vw;
+	font-size: 2vw;
 	color: #fff;
 	text-align: center;
-	background: rgba(0,0,0,0.4);
+	background: rgba(0,0,0,0.8);
 	font-family: 'Roboto', sans-serif;
 }
-#timer{
+#timer-container{
 	position: relative;
-	top: -10vw;
-	height: 15vw;
+	height: 35vh;
+	top: -10vh;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	overflow: hidden;
+}
+#timer{
+	height: 50vw;
 	width: 50vw;
 	padding: 0;
-	margin: 1em auto 0em;
+	margin:  0 auto;
 	display: flex;
 	flex-direction: row;
-	font-size: 5vw;
+	font-size: 4vw;
 	font-weight: bold;
 	text-align: center;
 	color: #fefefe;
@@ -61,22 +79,22 @@ body{
 }
 .timer-part{
 	position: relative;
-	width: 25%;
+	width: 20%;
 	height: 100%;
 	padding: 0;
-	margin: 0px auto;
+	margin: 0 auto;
 	box-sizing: border-box;
 }
 .timer-part::before{
-	clip-path: circle(48%);
 	content: '';
+	border-radius: 50%;
 	position: absolute;
-	bottom: 7%;
+	bottom: 76%;
 	left: 50%;
 	transform: translateX(-50%);
 	background-image: linear-gradient(to bottom, #00eb5e 10%, #00de9d 40%, #26d7aa 60%, #1fc8b4 80%, #1bc7b4 100%);
 	width: 100%;
-	height: 80%;
+	height: 20%;
 }
 .timer-text{
 	position: relative;
@@ -97,7 +115,6 @@ body{
 	display: flex;
 	width: 100%;
 	height: 35vw;
-	top: 7vw;
 	margin: 0;
 	padding: 0;
 	overflow: hidden;
@@ -108,6 +125,7 @@ body{
 	top: 10%;
 	opacity: 0;
 	transition: all 1s;
+	box-shadow: 0 0 0.5em #000;
 }
 #embed svg{
 	position: absolute;
@@ -120,7 +138,7 @@ body{
 	top: 15%;
 	opacity: 0;
 	transition: all 1s;
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Roboto', sans-serif;
 	color: rgb(35,35,35);
 }
 #rewind{
@@ -132,9 +150,8 @@ body{
 	text-align: center;
 	padding:0;
 	margin: 0;
-	font-size: 4vw;
+	font-size: 5vw;
 	padding-top: 1vw;
-	font-weight: bold;
 }
 #rewind-year{
 	width: 100%;
@@ -145,13 +162,13 @@ body{
 	text-align: center;
 	padding:0;
 	margin: 0;
-	font-size: 3vw;
+	font-size: 7.5vw;
+	/* letter-spacing: 0.2em; */
 	font-weight: bolder;
 }
 #middle_text{
 	position: relative;
 	margin: 0;
-	margin-bottom: 8vw;
 	box-sizing: border-box;
 	width: 100%;
 	height: 5em;
@@ -197,7 +214,6 @@ body{
 	margin: 0;
   height: 30vw;
   width: 100%;
-	top: 7vw;
   background-color: #262827;
 	box-shadow: 0 0 1vw #000
 }
@@ -220,27 +236,8 @@ body{
 	right: 0;
 	display: flex;
 	flex-direction: row;
-	width: 30%;
-	border-bottom: 0.1vw solid white;
+	width: 20%;
 	font-size: 2vw;
-	font-family: 'Raleway', sans-serif;
-}
-#footer-link span{
-	color: #fff;
-	padding: 0.3vw 0;
-	font-weight: bold;
-}
-#footer-logo{
-	display: inline-block;
-	position: absolute;
-	left: -6vw;
-	top: -1vw;
-	width: 6vw;
-	height: 6vw;
-}
-#footer-logo img{
-	height: 100%;
-	width: 100%;
 }
 .fab{
 	text-decoration: none;
@@ -302,8 +299,8 @@ body{
   margin: 0;
 	padding: 0;
 }
-#footer-info span{
-	font-size: 1.5em;
+#footer-info h4{
+	font-size: 1.2em;
 }
 #map{
 	box-sizing: border-box;
@@ -361,9 +358,6 @@ body{
 	color: rgb(35,35,35);
 }
 @media (max-width: 1100px) {
-	#background{
-		height: 60vw;
-	}
 	#banner{
 		width: 75%;
 	}
@@ -383,10 +377,13 @@ body{
 	#middle_text_line{
 		width: 40%;
 	}
+	#timer-container{
+		height: 32vh;
+		top: -7vh;
+	}
 	#timer{
-		width: 70vw;
-		top: -12vw;
-		height: 20vw;
+		width: 60vw;
+		height: 60vw;
 		font-size: 6vw;
 	}
 	.fab{
@@ -409,9 +406,6 @@ body{
 	}
 }
 @media (max-width: 1000px) {
-	#background{
-		height: 70vw;
-	}
 	#banner{
 		width: 90%;
 	}
@@ -431,11 +425,14 @@ body{
 	#middle_text_line{
 		width: 50%;
 	}
+	#timer-container{
+		height: 31vh;
+		top: -6vh;
+	}
 	#timer{
-		width: 80vw;
-		top: -14vw;
-		height: 24vw;
-		font-size: 7.5vw;
+		width: 70vw;
+		height: 70vw;
+		font-size: 7vw;
 	}
 	.fab{
 		width: 3.5vw;
@@ -457,9 +454,6 @@ body{
 	}
 }
 @media (max-width: 900px) {
-	#background{
-		height: 80vw;
-	}
 	#banner{
 		width: 100%;
 	}
@@ -479,11 +473,14 @@ body{
 	#middle_text_line{
 		width: 60%;
 	}
+	#timer-container{
+		height: 31vh;
+		top: -6vh;
+	}
 	#timer{
-		width: 90vw;
-		top: -16vw;
-		height: 28vw;
-		font-size: 9vw;
+		width: 80vw;
+		height: 80vw;
+		font-size: 8vw;
 	}
 	.fab{
 		width: 4vw;

@@ -1,37 +1,15 @@
 var scrollload = false;
-//var scrollsec = 1;
 
 function initialize(){
   update_time();
   modal();
   typewriter();
-  setInterval(checksec, 1200);
   window.addEventListener("scroll", function(){
     if(!scrollload){
       slidein();
     }
-    // var scrollh = document.getElementById('sec').offsetTop - document.documentElement.scrollTop;
-    // if(scrollsec == 1){
-    //   if(scrollh < window.innerHeight){
-    //     document.documentElement.scrollTop = document.getElementById('sec').offsetTop;
-    //   }
-    // }
-    // else if(scrollsec == 2){
-    //   if(scrollh > 0){
-    //     document.documentElement.scrollTop = 0;
-    //   }
-    // }
   });
   slidein();
-}
-
-function checksec(){
-  if((document.getElementById('sec').offsetTop - document.documentElement.scrollTop) <= 0){
-    scrollsec = 2;
-  }
-  else{
-    scrollsec = 1;
-  }
 }
 
 function update_time(){
@@ -99,9 +77,9 @@ function typewriter(){
   textadd();
 }
 function slidein(){
-  var el = document.getElementById('sec');
+  var el = document.getElementById('embed');
   var ypos = el.offsetTop - document.documentElement.scrollTop;
-  if(ypos <= 0){
+  if(ypos < window.innerHeight && (ypos+el.offsetHeight/2) < window.innerHeight){
       document.getElementById('youtube').style.right = "10%";
       document.getElementById('youtube').style.opacity = "1";
       document.getElementById('rewind-text').style.left = "5%";

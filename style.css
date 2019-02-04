@@ -1,20 +1,6 @@
-html{
-	scroll-behavior: smooth;
-}
 body{
 	margin: 0px;
 	padding: 0px;
-}
-#sec{
-	position: relative;
-	height: 100vh;
-	min-height: 1300px;
-	width: 100%;
-	margin: 0;
-	padding: 0;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
 }
 #background{
 	box-shadow: 0 0 1vw #000;
@@ -23,10 +9,9 @@ body{
 	padding: 0;
 	background-image: url('./image.jpg');
 	background-size: 100% 100%;
-	height: 75vh;
+	height: 40vw;
 }
 #banner{
-	position: relative;
 	width: 60%;
 	height: 60%;
 	margin: 0 auto;
@@ -57,16 +42,15 @@ body{
 }
 #timer-container{
 	position: relative;
-	height: 35vh;
-	top: -10vh;
+	top: -5vw;
+	height: 10vw;
 	width: 100%;
 	padding: 0;
 	margin: 0;
-	overflow: hidden;
 }
 #timer{
-	height: 50vw;
-	width: 50vw;
+	height: 100%;
+	width: 50%;
 	padding: 0;
 	margin:  0 auto;
 	display: flex;
@@ -89,12 +73,12 @@ body{
 	content: '';
 	border-radius: 50%;
 	position: absolute;
-	bottom: 76%;
+	top: 20%;
 	left: 50%;
 	transform: translateX(-50%);
 	background-image: linear-gradient(to bottom, #00eb5e 10%, #00de9d 40%, #26d7aa 60%, #1fc8b4 80%, #1bc7b4 100%);
 	width: 100%;
-	height: 20%;
+	height: 100%;
 	box-shadow: 0 0 0.1em #000;
 }
 .timer-text{
@@ -115,13 +99,13 @@ body{
 	position: relative;
 	display: flex;
 	width: 100%;
-	height: 35vw;
+	height: 40vw;
 	margin: 0;
 	padding: 0;
 	overflow: hidden;
 }
 #embed iframe{
-	width: 40%;
+	width: 50%;
 	height: 80%;
 	position: absolute;
 	right: -40%;
@@ -132,11 +116,13 @@ body{
 }
 #embed svg{
 	position: absolute;
+	height: 100%;
+	width: 100%;
 }
 #rewind-text{
 	position: absolute;
 	width: 30%;
-	height: 40%;
+	height: 50%;
 	left: -30%;
 	top: 15%;
 	opacity: 0;
@@ -144,9 +130,12 @@ body{
 	font-family: 'Roboto', sans-serif;
 	color: rgb(35,35,35);
 }
+#rewind-text svg{
+	position: absolute;
+}
 #rewind{
 	width: 100%;
-	height: 50%;
+	height: 30%;
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -160,13 +149,12 @@ body{
 	width: 100%;
 	height: 50%;
 	position: absolute;
-	top: 50%;
+	top: 35%;
 	left: 0;
 	text-align: center;
 	padding:0;
 	margin: 0;
 	font-size: 7.5vw;
-	/* letter-spacing: 0.2em; */
 	font-weight: bolder;
 }
 #middle_text{
@@ -174,7 +162,6 @@ body{
 	margin: 0;
 	box-sizing: border-box;
 	width: 100%;
-	height: 5em;
 	padding: 0;
 }
 #middle_text_1{
@@ -206,7 +193,7 @@ body{
 }
 #middle_text_line{
 	width: 30%;
-	margin: 3vw auto;
+	margin: 2vw auto;
 	padding: 0;
 	border: 0.1vw solid LightGray;
 }
@@ -263,10 +250,6 @@ body{
     background: red;
     color: white;
 }
-.fa-twitter{
-    background: white;
-    color: rgb(44, 70, 218);
-}
 .fa-facebook-f:hover{
     color: #3B5998;
     background-color: white;
@@ -278,10 +261,6 @@ body{
 .fa-youtube:hover{
     color: red;
     background: white;
-}
-.fa-twitter:hover{
-    color: white;
-    background: rgb(44, 70, 218);
 }
 #footer-base{
 	position: absolute;
@@ -359,148 +338,4 @@ body{
 #modal-close:hover,
 #modal-close:focus {
 	color: rgb(35,35,35);
-}
-@media (max-width: 1100px) {
-	#banner{
-		width: 75%;
-	}
-	#caption{
-		width: 60%;
-		font-size: 4vw;
-	}
-	#middle_text_1{
-		font-size: 5vw;
-	}
-	#middle_text_2u{
-		font-size: 3vw;
-	}
-	#middle_text_2e{
-		font-size: 6vw;
-	}
-	#middle_text_line{
-		width: 40%;
-	}
-	#timer-container{
-		height: 32vh;
-		top: -7vh;
-	}
-	#timer{
-		width: 60vw;
-		height: 60vw;
-		font-size: 6vw;
-	}
-	.fab{
-		width: 3vw;
-		height: 3vw;
-		font-size: 2.5vw;
-	}
-	#footer-info{
-		font-size: 1.6vw;
-	}
-	#footer-logo{
-		left: -6vw;
-		width: 6.2vw;
-		height: 6.2vw;
-	}
-	#modal-content{
-		left: 25%;
-		width: 50%;
-		height: 50%;
-	}
-}
-@media (max-width: 1000px) {
-	#banner{
-		width: 90%;
-	}
-	#caption{
-		width: 70%;
-		font-size: 5vw;
-	}
-	#middle_text_1{
-		font-size: 6vw;
-	}
-	#middle_text_2u{
-		font-size: 4vw;
-	}
-	#middle_text_2e{
-		font-size: 8vw;
-	}
-	#middle_text_line{
-		width: 50%;
-	}
-	#timer-container{
-		height: 31vh;
-		top: -6vh;
-	}
-	#timer{
-		width: 70vw;
-		height: 70vw;
-		font-size: 7vw;
-	}
-	.fab{
-		width: 3.5vw;
-		height: 3.5vw;
-		font-size: 3vw;
-	}
-	#footer-info{
-		font-size: 1.7vw;
-	}
-	#footer-logo{
-		left: -7vw;
-		width: 6.7vw;
-		height: 6.7vw;
-	}
-	#modal-content{
-		left: 10%;
-		width: 80%;
-		height: 40%;
-	}
-}
-@media (max-width: 900px) {
-	#banner{
-		width: 100%;
-	}
-	#caption{
-		width: 80%;
-		font-size: 6vw;
-	}
-	#middle_text_1{
-		font-size: 6.5vw;
-	}
-	#middle_text_2u{
-		font-size: 4.5vw;
-	}
-	#middle_text_2e{
-		font-size: 9vw;
-	}
-	#middle_text_line{
-		width: 60%;
-	}
-	#timer-container{
-		height: 31vh;
-		top: -6vh;
-	}
-	#timer{
-		width: 80vw;
-		height: 80vw;
-		font-size: 8vw;
-	}
-	.fab{
-		width: 4vw;
-		height: 4vw;
-		font-size: 3.5vw;
-	}
-	#footer-info{
-		font-size: 1.8vw;
-	}
-	#footer-logo{
-		left: -8vw;
-		width: 7.2vw;
-		height: 7.2vw;
-	}
-	#modal-content{
-		left: 5%;
-		width: 90%;
-		height: 45%;
-	}
 }

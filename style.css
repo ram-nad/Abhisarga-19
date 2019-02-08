@@ -32,9 +32,9 @@ body{
 	box-sizing: border-box;
 	margin: 1em auto;
 	padding: 0.5em 0;
-	width: 40%;
+	width: 50%;
 	height: 2em;
-	font-size: 2vw;
+	font-size: 2.5vw;
 	color: #fff;
 	text-align: center;
 	background: rgba(0,0,0,0.8);
@@ -97,10 +97,9 @@ body{
 #embed{
 	box-sizing: border-box;
 	position: relative;
-	display: flex;
 	width: 100%;
 	height: 40vw;
-	margin: 0;
+	margin: 0 0 5vw;
 	padding: 0;
 	overflow: hidden;
 }
@@ -109,12 +108,13 @@ body{
 	height: 80%;
 	position: absolute;
 	right: -40%;
-	top: 10%;
 	opacity: 0;
 	transition: all 1s;
 	box-shadow: 0 0 0.5em #000;
+	background: rgba(0,0,0,0);
+	box-sizing: border-box;
 }
-#embed svg{
+#embed #lines{
 	position: absolute;
 	height: 100%;
 	width: 100%;
@@ -159,7 +159,7 @@ body{
 }
 #middle_text{
 	position: relative;
-	margin: 0;
+	margin: 3vw 0;
 	box-sizing: border-box;
 	width: 100%;
 	padding: 0;
@@ -209,31 +209,32 @@ body{
 }
 #licon{
   position: absolute;
-	left: 0;
+	left: -5%;
   margin: 0;
   bottom: 0;
   width: 40%;
   background-repeat: no-repeat;
   height: 110%;
-  background-size: contain;
+  background-size: cover;
   background-image: url("icon.png");
 }
 #footer-link{
 	position: absolute;
-	padding: 1vw;
+	padding: 0.5em;
 	margin: 0;
-	top: 1vw;
-	right: 0;
+	top: 1em;
+	right: 1.5em;
 	display: flex;
 	flex-direction: row;
 	width: 20%;
 	font-size: 2vw;
 }
 .fab{
+	box-sizing: border-box;
 	text-decoration: none;
-	width: 2.5vw;
-	height: 2.5vw;
-	padding: 0.5vw;
+	width: 1.5em;
+	height: 1.5em;
+	padding: 0.25em;
 	margin: 0 auto;
 	text-align: center;
 	border-radius: 50%;
@@ -272,70 +273,30 @@ body{
 }
 #footer-info{
 	position: absolute;
-	right: 2vw;
-	bottom: 6vw;
+	right: 0.3em;
+	bottom: 3em;
   font-family: 'Roboto', sans-serif;
-	font-size: 1.2vw;
+	font-size: 1.4vw;
 	font-weight: bold;
 	color: white;
   margin: 0;
 	padding: 0;
 }
 #footer-info h4{
-	font-size: 1.2em;
+	font-size: 1em;
+	font-weight: bolder;
 }
 #map{
 	box-sizing: border-box;
 	margin: 0;
-  font-size: 1.2vw;
-	padding: 0.5vw;
+	font-size: inherit;
+	padding: 0.5em;
   background-color: white;
   border: 0;
   border-radius: 5%;
   color: rgb(32,178,170);
 	font-weight: bold;
-  height: 3vw;
-  width: 8vw;
+  height: 2.5em;
+  width: 6em;
 	cursor: pointer;
-}
-#showmap{
-	display: none;
-	position: fixed;
-	left: 0;
-	top: 0;
-	width: 100%;
-	height: 100%;
-	background-color: rgba(0,0,0,0.4);
-	overflow: hidden;
-}
-#modal-content{
-	border-radius: 1%;
-	position: absolute;
-	background-color: rgb(18, 178, 170);
-	margin: 0 auto;
-	padding: 0;
-	left: 25%;
-	top: 10%;
-	width: 50%;
-	height: 60%;
-	box-shadow: 0 0 0.5vw 0 rgba(0,0,0,0.2);
-	animation-name: animatetop;
-	animation-duration: 0.4s;
-}
-@keyframes animatetop {
-	from {top: -30%; opacity: 0}
-	to {top: 0; opacity: 1}
-}
-#modal-close {
-	padding-right: 1vw;
-	color: white;
-	float: right;
-	font-size: 2vw;
-	font-weight: bold;
-	text-decoration: none;
-	cursor: pointer;
-}
-#modal-close:hover,
-#modal-close:focus {
-	color: rgb(35,35,35);
 }

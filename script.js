@@ -2,7 +2,6 @@ var scrollload = false;
 
 function initialize(){
   update_time();
-  modal();
   typewriter();
   window.addEventListener("scroll", function(){
     if(!scrollload){
@@ -37,23 +36,6 @@ function update_time(){
     second_section.innerHTML = seconds;
   },1000);
 }
-
-function modal(){
-    var modal = document.getElementById("showmap");
-    var btn = document.getElementById("map");
-    var span = document.getElementById("modal-close");
-    btn.addEventListener("click", function() {
-        modal.style.display = "block";
-    });
-    span.addEventListener("click", function() {
-        modal.style.display = "none";
-    });
-    window.addEventListener("click", function(event) {
-        if (event.target == modal) {
-            modal.style.display = "none";
-        }
-    });
-}
 function typewriter(){
   var caption = document.getElementById("caption");
   var text = "CELEBRATION BEGINS IN  ";
@@ -80,9 +62,9 @@ function slidein(){
   var el = document.getElementById('embed');
   var ypos = el.offsetTop - document.documentElement.scrollTop;
   if(ypos < window.innerHeight && (ypos+el.offsetHeight/2) < window.innerHeight){
-      document.getElementById('youtube').style.right = "10%";
+      document.getElementById('youtube').style.right = "0%";
       document.getElementById('youtube').style.opacity = "1";
-      document.getElementById('rewind-text').style.left = "5%";
+      document.getElementById('rewind-text').style.left = "0";
       document.getElementById('rewind-text').style.opacity = "1";
       scrollload = true;
   }

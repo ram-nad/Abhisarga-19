@@ -6,6 +6,7 @@ html{
 body{
   margin: 0;
   padding: 0;
+  height: 100%;
   position: relative;
   overflow-x: hidden;
 }
@@ -156,4 +157,86 @@ div{
   top: 45vw;
   left: 10vw;
   color: rgba(45,213,105,0.4);
+}
+#events{
+  height: 110vw;
+}
+#eventhead{
+  top: 0vw;
+  left: 5vw;
+  font-size: 5vw;
+  position: absolute;
+  color: #fff;
+  width: 7em;
+  height: 1.2em;
+  font-weight: bolder;
+}
+#eventhead hr{
+  height: 0.1em;
+  background-color: #fff;
+  margin: 0;
+}
+#eventcards{
+  top: 20vw;
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.eventcards{
+  width: 30vw;
+  height: 35vw;
+  font-size: 1.6vw;
+  margin: 4vw auto;
+  color: #fff;
+  background-color: #f00;
+  position: relative;
+}
+.eventcards h1{
+  margin: 0;
+  padding: 0;
+  position: relative;
+  top: -0.8em;
+  font-size: 1.6em;
+  right: 0.4em;
+}
+.eventcards img{
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  filter: blur(0.5px);
+}
+.eventcards .shadow{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(to bottom, #2de173, #0847fc);
+  opacity: 0.6;
+}
+.eventcards p{
+  position: relative;
+  margin-bottom: 2.5em;
+  font-weight: bold;
+  left: 1em;
+}
+.eventcards ul{
+  line-height: 1.5em;
+  position: relative;
+  font-weight: bold;
+  list-style: none;
+}
+#button{
+  font-size: 2vw;
+  text-align: center;
+  padding: 0.1em;
+  margin: 0 auto;
+  border: 0.1em solid #fff;
+  height: 1.4em;
+  width: 5em;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 1em;
 }

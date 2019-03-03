@@ -60,6 +60,24 @@
   #camera{
     top: 65%;
   }
+  #events{
+    height: 120vw;
+  }
+  #eventhead{
+    left: 6vw;;
+    font-size: 5.5vw;
+  }
+  #eventcards{
+    top: 20vw;
+  }
+  .eventcards{
+    width: 31.5vw;
+    height: 38vw;
+    font-size: 1.8vw;
+  }
+  #button{
+    font-size: 2.5vw;
+  }
 }
 @media (min-width: 481px) and (max-width: 767px){
   .stripe{
@@ -123,6 +141,44 @@
   #camera{
     top: 70%;
   }
+  #events{
+    height: 205vw;
+  }
+  #eventhead{
+    left: 7vw;;
+    font-size: 6.2vw;
+  }
+  #eventcards{
+    top: 22vw;
+  }
+  .eventcards{
+    width: 46vw;
+    height: 50vw;
+    font-size: 2.6vw;
+  }
+  #button{
+    font-size: 3.5vw;
+  }
+  #bead7{
+    left: 0%;
+    top: 11%;
+  }
+  #bead8{
+    right: 8%;
+    bottom: 31%;
+  }
+  #bead9{
+    bottom: 65%;
+    left: 47%;
+  }
+  #bead10{
+    left: 8%;
+    bottom: 3%;
+  }
+  #bead11{
+    top: 5%;
+    right: 5%;
+  }
 }
 @media (max-width: 480px){
   .stripe{
@@ -185,5 +241,43 @@
   }
   #camera{
     top: 78%;
+  }
+  #events{
+    height: 530vw;
+  }
+  #eventhead{
+    left: 8vw;;
+    font-size: 8vw;
+  }
+  #eventcards{
+    top: 27vw;
+  }
+  .eventcards{
+    width: 68vw;
+    height: 74vw;
+    font-size: 3.8vw;
+  }
+  #button{
+    font-size: 4.2vw;
+  }
+  #bead7{
+    left: 7%;
+    top: 21%;
+  }
+  #bead8{
+    right: 8%;
+    bottom: 67%;
+  }
+  #bead9{
+    bottom: 48%;
+    left: 43%;
+  }
+  #bead10{
+    left: 8%;
+    bottom: 33%;
+  }
+  #bead11{
+    top: 96%;
+    right: 5%;
   }
 }

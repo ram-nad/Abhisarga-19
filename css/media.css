@@ -2,282 +2,101 @@
   .stripe{
     width: 0.3vw;
   }
-  #poster{
-    height: 62vw;
-  }
-  #register{
+  #bar{
     font-size: 2.3vw;
   }
-  #menu{
-    width: 5vw;
+  #poster{
+    height: 75vw;
   }
   #logo{
-    top: 4vw;
-    width: 54vw;
+    width: 55vw;
     left: 45vw;
-    height: 38vw;
+    height: 40vw;
   }
   #heading{
-    top: 22vw;
+    top: 25vw;
     left: 5vw;
-    height: 40vw;
-    width: 46vw;
-    font-size: 4vw;
+    height: 50vw;
+    width: 45vw;
+    font-size: 4.5vw;
   }
   #about{
-    height: 95vw;
-  }
-  #aboutus{
-    top: 7vw;
-    left: 7vw;
-    font-size: 5.8vw;
-  }
-  #desc{
-    top: 20vw;
-    left: 9vw;
-    width: 50vw;
-    font-size: 3vw;
-  }
-  .tags{
-    font-size: 5.8vw;
-  }
-  #electric{
-    top: 18vw;
-    left: 7vw;
-  }
-  #ecstacy{
-    top: 49vw;
-    left: -5vw;
-  }
-  #thrill{
-    top: 40vw;
-    left: 38vw;
-  }
-  #fun{
-    top: 60vw;
-    left: 16vw;
-  }
-  #camera{
-    top: 65%;
+    height: 80vw;
+    font-size: 5.6vw;
   }
   #events{
-    height: 120vw;
-  }
-  #eventhead{
-    left: 6vw;;
-    font-size: 5.5vw;
-  }
-  #eventcards{
-    top: 20vw;
+    font-size: 6.5vw;
   }
   .eventcards{
-    width: 31.5vw;
-    height: 38vw;
-    font-size: 1.8vw;
-  }
-  #button{
-    font-size: 2.5vw;
+    width: 45vw;
+    height: 50vw;
   }
 }
 @media (min-width: 481px) and (max-width: 767px){
   .stripe{
     width: 0.4vw;
   }
-  #poster{
-    height: 90vw;
-  }
-  #register{
+  #bar{
     font-size: 2.7vw;
   }
-  #menu{
-    width: 7vw;
+  #poster{
+    height: 100vw;
   }
   #logo{
-    top: 6vw;
     width: 80vw;
     left: 10vw;
     height: 50vw;
   }
   #heading{
-    top: 50vw;
+    top: 55vw;
     left: 10vw;
-    height: 35vw;
-    width: 70vw;
+    height: 45vw;
+    width: 75vw;
     font-size: 5vw;
   }
   #about{
-    height: 110vw;
-  }
-  #aboutus{
-    top: 9vw;
-    left: 9vw;
-    font-size: 6.7vw;
-  }
-  #desc{
-    top: 22vw;
-    left: 11vw;
-    width: 60vw;
-    font-size: 3.5vw;
-  }
-  .tags{
-    font-size: 6.7vw;
-  }
-  #electric{
-    top: 19.5vw;
-    left: 9vw;
-  }
-  #ecstacy{
-    top: 54vw;
-    left: -6vw;
-  }
-  #thrill{
-    top: 45vw;
-    left: 50vw;
-  }
-  #fun{
-    top: 70vw;
-    left: 16vw;
-  }
-  #camera{
-    top: 70%;
+    height: 85vw;
+    font-size: 6vw;
   }
   #events{
-    height: 205vw;
-  }
-  #eventhead{
-    left: 7vw;;
-    font-size: 6.2vw;
-  }
-  #eventcards{
-    top: 22vw;
+    font-size: 8vw;
   }
   .eventcards{
-    width: 46vw;
+    width: 40vw;
     height: 50vw;
-    font-size: 2.6vw;
-  }
-  #button{
-    font-size: 3.5vw;
-  }
-  #bead7{
-    left: 0%;
-    top: 11%;
-  }
-  #bead8{
-    right: 8%;
-    bottom: 31%;
-  }
-  #bead9{
-    bottom: 65%;
-    left: 47%;
-  }
-  #bead10{
-    left: 8%;
-    bottom: 3%;
-  }
-  #bead11{
-    top: 5%;
-    right: 5%;
   }
 }
 @media (max-width: 480px){
   .stripe{
     width: 0.5vw;
   }
-  #poster{
-    height: 110vw;
-  }
-  #register{
+  #bar{
     font-size: 3.3vw;
   }
-  #menu{
-    width: 9vw;
+  #poster{
+    height: 120vw;
   }
   #logo{
-    top: 10vw;
-    width: 99vw;
-    left: 0;
+    width: 100vw;
+    left: 0vw;
     height: 60vw;
   }
   #heading{
     top: 65vw;
-    left: 9vw;
-    height: 45vw;
+    left: 10vw;
+    height: 55vw;
     width: 90vw;
     font-size: 5.5vw;
   }
   #about{
-    height: 110vw;
-  }
-  #aboutus{
-    top: 8vw;
-    left: 8vw;
-    font-size: 8vw;
-  }
-  #desc{
-    top: 25vw;
-    left: 11vw;
-    width: 70vw;
-    font-size: 4vw;
-  }
-  .tags{
-    font-size: 8vw;
-  }
-  #electric{
-    top: 20vw;
-    left: 8vw;
-  }
-  #ecstacy{
-    top: 62vw;
-    left: -8vw;
-  }
-  #thrill{
-    top: 50vw;
-    left: 57vw;
-  }
-  #fun{
-    top: 77vw;
-    left: 18vw;
-  }
-  #camera{
-    top: 78%;
+    height: 95vw;
+    font-size: 6.5vw;
   }
   #events{
-    height: 530vw;
-  }
-  #eventhead{
-    left: 8vw;;
-    font-size: 8vw;
-  }
-  #eventcards{
-    top: 27vw;
+    font-size: 10vw;
   }
   .eventcards{
-    width: 68vw;
-    height: 74vw;
-    font-size: 3.8vw;
-  }
-  #button{
-    font-size: 4.2vw;
-  }
-  #bead7{
-    left: 7%;
-    top: 21%;
-  }
-  #bead8{
-    right: 8%;
-    bottom: 67%;
-  }
-  #bead9{
-    bottom: 48%;
-    left: 43%;
-  }
-  #bead10{
-    left: 8%;
-    bottom: 33%;
-  }
-  #bead11{
-    top: 96%;
-    right: 5%;
+    width: 60vw;
+    height: 70vw;
   }
 }

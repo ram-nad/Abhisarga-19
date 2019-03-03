@@ -29,13 +29,13 @@
 #guitar{
   width: 17%;
   bottom: -10%;
-  left: 40%;
+  left: 55%;
   transform: rotate(7deg);
 }
 #camera{
   width: 10%;
-  top: 55%;
-  left: 55%;
+  top: 65%;
+  left: 65%;
   transform: rotate(15deg);
 }
 #triangle{
@@ -51,7 +51,7 @@
 }
 #bead3{
   width: 5%;
-  bottom: 25%;
+  bottom: 20%;
   left: 25%;
 }
 #bead4{
@@ -82,7 +82,7 @@
 #bead9{
   width: 5%;
   bottom: 25%;
-  left: 31%;
+  left: 5%;
 }
 #bead10{
   width: 5%;
@@ -91,6 +91,6 @@
 }
 #bead11{
   width: 5%;
-  top: 10%;
+  top: 5%;
   right: 18%;
 }

@@ -18,7 +18,7 @@
     left: 5vw;
     height: 50vw;
     width: 45vw;
-    font-size: 4.5vw;
+    font-size: 4.2vw;
   }
   #about{
     height: 80vw;
@@ -30,6 +30,18 @@
   .eventcards{
     width: 45vw;
     height: 50vw;
+  }
+  #footer{
+    font-size: 3.7vw;
+  }
+  #links{
+    width: 30%;
+  }
+  #title{
+    width: 40%;
+  }
+  #social{
+    width: 25%
   }
 }
 @media (min-width: 481px) and (max-width: 767px){
@@ -65,6 +77,18 @@
     width: 40vw;
     height: 50vw;
   }
+  #footer{
+    font-size: 4.5vw;
+  }
+  #links{
+    width: 35%;
+  }
+  #title{
+    width: 45%;
+  }
+  #social{
+    width: 35%
+  }
 }
 @media (max-width: 480px){
   .stripe{
@@ -98,5 +122,17 @@
   .eventcards{
     width: 60vw;
     height: 70vw;
+  }
+  #footer{
+    font-size: 6vw;
+  }
+  #links{
+    width: 70%;
+  }
+  #title{
+    width: 70%;
+  }
+  #social{
+    width: 70%
   }
 }

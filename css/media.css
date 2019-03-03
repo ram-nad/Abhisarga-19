@@ -1,0 +1,189 @@
+@media (min-width: 768px) and (max-width: 1024px){
+  .stripe{
+    width: 0.3vw;
+  }
+  #poster{
+    height: 62vw;
+  }
+  #register{
+    font-size: 2.3vw;
+  }
+  #menu{
+    width: 5vw;
+  }
+  #logo{
+    top: 4vw;
+    width: 54vw;
+    left: 45vw;
+    height: 38vw;
+  }
+  #heading{
+    top: 22vw;
+    left: 5vw;
+    height: 40vw;
+    width: 46vw;
+    font-size: 4vw;
+  }
+  #about{
+    height: 95vw;
+  }
+  #aboutus{
+    top: 7vw;
+    left: 7vw;
+    font-size: 5.8vw;
+  }
+  #desc{
+    top: 20vw;
+    left: 9vw;
+    width: 50vw;
+    font-size: 3vw;
+  }
+  .tags{
+    font-size: 5.8vw;
+  }
+  #electric{
+    top: 18vw;
+    left: 7vw;
+  }
+  #ecstacy{
+    top: 49vw;
+    left: -5vw;
+  }
+  #thrill{
+    top: 40vw;
+    left: 38vw;
+  }
+  #fun{
+    top: 60vw;
+    left: 16vw;
+  }
+  #camera{
+    top: 65%;
+  }
+}
+@media (min-width: 481px) and (max-width: 767px){
+  .stripe{
+    width: 0.4vw;
+  }
+  #poster{
+    height: 90vw;
+  }
+  #register{
+    font-size: 2.7vw;
+  }
+  #menu{
+    width: 7vw;
+  }
+  #logo{
+    top: 6vw;
+    width: 80vw;
+    left: 10vw;
+    height: 50vw;
+  }
+  #heading{
+    top: 50vw;
+    left: 10vw;
+    height: 35vw;
+    width: 70vw;
+    font-size: 5vw;
+  }
+  #about{
+    height: 110vw;
+  }
+  #aboutus{
+    top: 9vw;
+    left: 9vw;
+    font-size: 6.7vw;
+  }
+  #desc{
+    top: 22vw;
+    left: 11vw;
+    width: 60vw;
+    font-size: 3.5vw;
+  }
+  .tags{
+    font-size: 6.7vw;
+  }
+  #electric{
+    top: 19.5vw;
+    left: 9vw;
+  }
+  #ecstacy{
+    top: 54vw;
+    left: -6vw;
+  }
+  #thrill{
+    top: 45vw;
+    left: 50vw;
+  }
+  #fun{
+    top: 70vw;
+    left: 16vw;
+  }
+  #camera{
+    top: 70%;
+  }
+}
+@media (max-width: 480px){
+  .stripe{
+    width: 0.5vw;
+  }
+  #poster{
+    height: 110vw;
+  }
+  #register{
+    font-size: 3.3vw;
+  }
+  #menu{
+    width: 9vw;
+  }
+  #logo{
+    top: 10vw;
+    width: 99vw;
+    left: 0;
+    height: 60vw;
+  }
+  #heading{
+    top: 65vw;
+    left: 9vw;
+    height: 45vw;
+    width: 90vw;
+    font-size: 5.5vw;
+  }
+  #about{
+    height: 110vw;
+  }
+  #aboutus{
+    top: 8vw;
+    left: 8vw;
+    font-size: 8vw;
+  }
+  #desc{
+    top: 25vw;
+    left: 11vw;
+    width: 70vw;
+    font-size: 4vw;
+  }
+  .tags{
+    font-size: 8vw;
+  }
+  #electric{
+    top: 20vw;
+    left: 8vw;
+  }
+  #ecstacy{
+    top: 62vw;
+    left: -8vw;
+  }
+  #thrill{
+    top: 50vw;
+    left: 57vw;
+  }
+  #fun{
+    top: 77vw;
+    left: 18vw;
+  }
+  #camera{
+    top: 78%;
+  }
+}

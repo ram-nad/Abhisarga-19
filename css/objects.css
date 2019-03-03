@@ -1,0 +1,71 @@
+.obj{
+  position: absolute;
+}
+#diamond{
+  top: 0;
+  width: 50%;
+}
+#bead1{
+  width: 5%;
+  left: 60%;
+  top: 5%;
+}
+#bead2{
+  width: 5%;
+  right: 10%;
+  top: 60%;
+}
+#rhombus{
+  width: 10%;
+  top: 0;
+  right: -5%;
+}
+#microphone{
+  width: 10%;
+  right: 10%;
+  top: 20%;
+  transform: rotate(-30deg);
+}
+#guitar{
+  width: 17%;
+  bottom: -10%;
+  left: 40%;
+  transform: rotate(7deg);
+}
+#camera{
+  width: 10%;
+  top: 55%;
+  left: 55%;
+  transform: rotate(15deg);
+}
+#triangle{
+  width: 15%;
+  left: -5%;
+  bottom: 20%;
+  transform: rotate(-15deg);
+}
+#circle{
+  width: 15%;
+  right: -8%;
+  bottom: 1%;
+}
+#bead3{
+  width: 5%;
+  bottom: 25%;
+  left: 25%;
+}
+#bead4{
+  width: 5%;
+  right: 8%;
+  top: 40%;
+}
+#bead5{
+  width: 5%;
+  top: 7%;
+  right: 25%;
+}
+#bead6{
+  width: 5%;
+  top: 0;
+  left: 18%;
+}

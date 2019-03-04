@@ -124,6 +124,7 @@ a{
   color: rgba(0,0,0,0);
   text-stroke: 0.04em #fff;
   -webkit-text-stroke: 0.04em #fff;
+  text-align: center;
 }
 #about{
   height: 75vw;
@@ -154,6 +155,7 @@ hr{
   font-size: 0.5em;
   font-weight: bold;
   color: #fff;
+  text-align: justify;
 }
 .tags{
   position: absolute;
@@ -177,7 +179,7 @@ hr{
 }
 #thrill{
   top: 1.4em;
-  left: 3.8em;
+  left: 5em;
   transform: rotate(-90deg);
   color: rgba(208,72,72,0.37);
 }
@@ -242,7 +244,8 @@ hr{
   position: relative;
   margin-bottom: 2.5em;
   font-weight: bold;
-  left: 1em;
+  text-align: justify;
+  margin: 0 0.2em;
 }
 .eventcards ul{
   line-height: 1.5em;
@@ -311,6 +314,7 @@ hr{
   height: 0vh;
   background: rgba(0,0,0,0.95);
   border-bottom-left-radius: 100%;
+  -webkit-transition: all 0.8s;
   transition: all 0.8s;
 }
 #close{
@@ -345,6 +349,7 @@ hr{
   height: 30vw;
   width: 50vw;
   opacity: 0;
+  -webkit-transition: opacity 0.5s linear 0.8s;
   transition: opacity 0.5s linear 0.8s;
 }
 #inlogo img{
@@ -377,11 +382,12 @@ hr{
 }
 #list li hr{
   width: 0%;
+  -webkit-transition: width 0.2s;
   transition: width 0.2s;
 }
 #list li a{
-  text-stroke: 0.04em #fff;
   -webkit-text-stroke: 0.04em #fff;
+  text-stroke: 0.04em #fff;
   transition: color 0.2s;
   color: rgba(0,0,0,0);
 }

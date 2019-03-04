@@ -23,18 +23,18 @@
 #microphone{
   width: 10%;
   right: 10%;
-  top: 20%;
+  top: 18%;
   transform: rotate(-30deg);
 }
 #guitar{
   width: 17%;
   bottom: -10%;
-  left: 55%;
+  left: 50%;
   transform: rotate(7deg);
 }
 #camera{
   width: 10%;
-  top: 65%;
+  bottom: 15%;
   left: 65%;
   transform: rotate(15deg);
 }
@@ -51,7 +51,7 @@
 }
 #bead3{
   width: 5%;
-  bottom: 20%;
+  bottom: 15%;
   left: 25%;
 }
 #bead4{

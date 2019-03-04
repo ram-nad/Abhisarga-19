@@ -72,11 +72,13 @@ a{
   font-weight: bold;
 }
 #menu{
+  height: 2.5em;
   margin: 0.5em 1.2em;
   width: 2.2em;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  cursor: pointer;
 }
 #menu div{
   height: 5%;
@@ -90,13 +92,15 @@ a{
 }
 #logo{
   position: absolute;
+  top: 5vw;
   left: 50vw;
   height: 30vw;
   width: 50vw;
 }
 #logo img{
   position: absolute;
-  height: 100%;
+  top: 0;
+  height: 85%;
   width: 100%;
 }
 #heading{
@@ -139,12 +143,14 @@ hr{
   height: 0.1em;
   background-color: #fff;
   margin: 0;
+  border: 0;
 }
 #desc{
   position: relative;
   top: 5em;
   left: 4em;
-  width: 22.5em;
+  width: 20em;
+  height: 10em;
   font-size: 0.5em;
   font-weight: bold;
   color: #fff;
@@ -159,19 +165,19 @@ hr{
   font-family: 'Tags', sans-serif;
 }
 #electric{
-  top: -0.7em;
-  left: -3.6em;
+  top: -0.6em;
+  left: -3.1em;
   color: rgba(31,58,230,0.29);
 }
 #ecstacy{
-  bottom: 1em;
-  left: -5.6em;
+  bottom: 0.8em;
+  left: -5em;
   transform: rotate(90deg);
   color: rgba(192,44,121,0.45);
 }
 #thrill{
   top: 1.4em;
-  left: 5em;
+  left: 3.8em;
   transform: rotate(-90deg);
   color: rgba(208,72,72,0.37);
 }
@@ -284,14 +290,74 @@ hr{
   padding-left: 0;
 }
 #footer img{
-  height: 1.3em;
-  width: 1.7em;
+  height: 0.9em;
+  width: 1.2em;
   padding: 0;
   margin: 0 0.2em;
 }
 #copyright{
   width: 100%;
+  margin-top: 0.6em;
   font-weight: lighter;
   font-size: 0.3em;
   text-align: center;
+}
+#fullmenu{
+  font-size: 5vw;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 0vw;
+  height: 0vh;
+  background: rgba(0,0,0,0.95);
+  border-bottom-left-radius: 100%;
+  transition: all 0.5s;
+}
+#close{
+  height: 0.8em;
+  width: 1.2em;
+  padding-top: 0.6em;
+  padding-left: 0.5em;
+  position: absolute;
+  right: 0;
+  top: 0;
+  cursor: pointer;
+  display: none;
+}
+#close hr{
+  height: 0.1em;
+  background-color: #fff;
+  width: 0.8em;
+  transition: all 0.8s;
+  border: 0;
+}
+#close1{
+  transform: rotate(45deg);
+}
+#close2{
+  transform: rotate(-45deg);
+}
+#inlogo{
+  position: absolute;
+  top: 5vw;
+  left: 50vw;
+  height: 30vw;
+  width: 50vw;
+  opacity: 0;
+  transition: opacity 0.5s linear 0.5s;
+}
+#inlogo img{
+  height: 85%;
+  width: 100%;
+}
+#icons-flex{
+  position: relative;
+  top: -1em;
+  display: flex;
+  justify-content: center;
+}
+#inlogo .icons{
+  width: 0.9em;
+  height: 0.7em;
+  margin: 0 0.2em;
 }

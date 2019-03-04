@@ -9,6 +9,7 @@
     height: 75vw;
   }
   #logo{
+    top: 5vw;
     width: 55vw;
     left: 45vw;
     height: 40vw;
@@ -22,7 +23,7 @@
   }
   #about{
     height: 80vw;
-    font-size: 5.6vw;
+    font-size: 6vw;
   }
   #events{
     font-size: 6.5vw;
@@ -43,6 +44,15 @@
   #social{
     width: 25%
   }
+  #fullmenu{
+    font-size: 6.5vw;
+  }
+  #inlogo{
+    top: 5vw;
+    width: 55vw;
+    left: 45vw;
+    height: 40vw;
+  }
 }
 @media (min-width: 481px) and (max-width: 767px){
   .stripe{
@@ -55,9 +65,10 @@
     height: 100vw;
   }
   #logo{
+    top: 10vw;
     width: 80vw;
     left: 10vw;
-    height: 50vw;
+    height: 45vw;
   }
   #heading{
     top: 55vw;
@@ -68,7 +79,7 @@
   }
   #about{
     height: 85vw;
-    font-size: 6vw;
+    font-size: 6.5vw;
   }
   #events{
     font-size: 8vw;
@@ -89,6 +100,15 @@
   #social{
     width: 35%
   }
+  #fullmenu{
+    font-size: 8vw;
+  }
+  #inlogo{
+    top: 10vw;
+    width: 80vw;
+    left: 10vw;
+    height: 45vw;
+  }
 }
 @media (max-width: 480px){
   .stripe{
@@ -101,9 +121,10 @@
     height: 120vw;
   }
   #logo{
+    top: 10vw;
     width: 100vw;
     left: 0vw;
-    height: 60vw;
+    height: 55vw;
   }
   #heading{
     top: 65vw;
@@ -114,7 +135,7 @@
   }
   #about{
     height: 95vw;
-    font-size: 6.5vw;
+    font-size: 8vw;
   }
   #events{
     font-size: 10vw;
@@ -134,5 +155,14 @@
   }
   #social{
     width: 70%
+  }
+  #fullmenu{
+    font-size: 10vw;
+  }
+  #inlogo{
+    top: 10vw;
+    width: 100vw;
+    left: 0vw;
+    height: 55vw;
   }
 }

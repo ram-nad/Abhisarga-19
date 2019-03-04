@@ -6,7 +6,7 @@
 @font-face {
   font-family: 'Headings';
   font-weight: bold;
-  src: url("fonts/overpass-heavy.otf.ttf") format("opentype");
+  src: url("fonts/overpass-heavy.otf") format("opentype");
 }
 @font-face {
   font-family: 'Tags';

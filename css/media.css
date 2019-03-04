@@ -45,13 +45,18 @@
     width: 25%
   }
   #fullmenu{
-    font-size: 6.5vw;
+    font-size: 6vw;
   }
   #inlogo{
     top: 5vw;
     width: 55vw;
     left: 45vw;
     height: 40vw;
+  }
+  #list{
+    top: 0;
+    left: 10vw;
+    width: 55vw;
   }
 }
 @media (min-width: 481px) and (max-width: 767px){
@@ -62,16 +67,16 @@
     font-size: 2.7vw;
   }
   #poster{
-    height: 100vw;
+    height: 90vw;
   }
   #logo{
-    top: 10vw;
+    top: 0;
     width: 80vw;
     left: 10vw;
     height: 45vw;
   }
   #heading{
-    top: 55vw;
+    top: 45vw;
     left: 10vw;
     height: 45vw;
     width: 75vw;
@@ -101,13 +106,18 @@
     width: 35%
   }
   #fullmenu{
-    font-size: 8vw;
+    font-size: 7vw;
   }
   #inlogo{
-    top: 10vw;
+    top: 0;
     width: 80vw;
     left: 10vw;
     height: 45vw;
+  }
+  #list{
+    top: 45vw;
+    left: 20vw;
+    width: 60vw;
   }
 }
 @media (max-width: 480px){
@@ -164,5 +174,10 @@
     width: 100vw;
     left: 0vw;
     height: 55vw;
+  }
+  #list{
+    top: 60vw;
+    left: 5vw;
+    width: 90vw;
   }
 }

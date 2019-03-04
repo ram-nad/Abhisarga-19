@@ -311,7 +311,7 @@ hr{
   height: 0vh;
   background: rgba(0,0,0,0.95);
   border-bottom-left-radius: 100%;
-  transition: all 0.5s;
+  transition: all 0.8s;
 }
 #close{
   height: 0.8em;
@@ -325,6 +325,7 @@ hr{
   display: none;
 }
 #close hr{
+  position: absolute;
   height: 0.1em;
   background-color: #fff;
   width: 0.8em;
@@ -344,7 +345,7 @@ hr{
   height: 30vw;
   width: 50vw;
   opacity: 0;
-  transition: opacity 0.5s linear 0.5s;
+  transition: opacity 0.5s linear 0.8s;
 }
 #inlogo img{
   height: 85%;
@@ -360,4 +361,36 @@ hr{
   width: 0.9em;
   height: 0.7em;
   margin: 0 0.2em;
+}
+#list{
+  position: absolute;
+  top: 0;
+  left: 5vw;
+  width: 50vw;
+}
+#list ul{
+  list-style: none;
+  width: auto;
+}
+#list li{
+  cursor: pointer;
+}
+#list li hr{
+  width: 0%;
+  transition: width 0.2s;
+}
+#list li a{
+  text-stroke: 0.04em #fff;
+  -webkit-text-stroke: 0.04em #fff;
+  transition: color 0.2s;
+  color: rgba(0,0,0,0);
+}
+#list li:hover{
+  color: #fff;
+}
+#list li:hover hr{
+  width: 20%;
+}
+#list li:hover a{
+  color: #fff;
 }

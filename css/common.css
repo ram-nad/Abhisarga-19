@@ -1,0 +1,286 @@
+@font-face {
+  font-family: 'Content';
+  font-weight: bold;
+  src: url("fonts/Anodina-ExtraBold.otf") format("opentype");
+}
+div{
+  padding: 0;
+  margin: 0;
+}
+#button{
+  font-size: 0.4em;
+  text-align: center;
+  padding: 0.1em;
+  margin: 1em auto 0;
+  border: 0.1em solid #fff;
+  height: 1.4em;
+  width: 5em;
+}
+#bar{
+  width: 100%;
+  position: relative;
+  font-size: 1.5vw;
+  background-color: #000;
+  height: 3.5em;
+  font-family: 'Content', sans-serif;
+}
+#bar-logo{
+  height: 100%;
+  width: 10em;
+}
+#register{
+  color: #fff;
+  height: 3.5em;
+  width: 6em;
+  text-align: center;
+  font-weight: bold;
+  float: right;
+}
+#menu{
+  height: 2.5em;
+  margin: 0.5em 1.2em;
+  width: 2.2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  cursor: pointer;
+  float: right;
+}
+#menu div{
+  height: 5%;
+  background: #fff;
+  border: 0;
+  width: 100%;
+}
+#menu div:nth-child(2){
+  width: 80%;
+  align-self: flex-end;
+}
+#footer{
+  width: 100%;
+  position: relative;
+  font-size: 3vw;
+  padding-top: 3em;
+  color: #fff;
+  background: #212d40;
+  clip-path: polygon(20% 0, 100% 30%, 100% 100%, 0 100%, 0 30%);
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  font-family: 'Headings', sans-serif;
+  font-weight: bolder;
+}
+#footer div div{
+  width: 9em;
+}
+#links{
+  width: 25%;
+}
+#title{
+  width: 35%;
+}
+#social{
+  width: 25%
+}
+#footer ul{
+  font-size: 0.8em;
+  line-height: 2em;
+  list-style: none outside;
+  padding-left: 0;
+}
+#footer img{
+  height: 1.2em;
+  width: 1.4em;
+  padding: 0;
+  margin: 0 0.2em;
+}
+#copyright{
+  width: 100%;
+  margin-top: 0.6em;
+  font-weight: lighter;
+  font-size: 0.3em;
+  text-align: center;
+}
+#fullmenu{
+  font-size: 5vw;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 0vw;
+  height: 0vh;
+  background: #000;
+  border-bottom-left-radius: 100%;
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s;
+  font-family: 'Content', sans-serif;
+}
+#close{
+  height: 0.8em;
+  width: 1.2em;
+  padding-top: 0.6em;
+  padding-left: 0.5em;
+  position: absolute;
+  right: 0;
+  top: 0;
+  cursor: pointer;
+  display: none;
+}
+#close hr{
+  position: absolute;
+  height: 0.1em;
+  background-color: #fff;
+  width: 0.8em;
+  transition: all 0.8s;
+  border: 0;
+}
+#close1{
+  transform: rotate(45deg);
+}
+#close2{
+  transform: rotate(-45deg);
+}
+#inlogo{
+  position: absolute;
+  top: 0;
+  left: 40vw;
+  height: 30vw;
+  width: 50vw;
+  opacity: 0;
+  -webkit-transition: opacity 0.5s linear 0.8s;
+  transition: opacity 0.5s linear 0.8s;
+}
+#inlogo img{
+  height: 85%;
+  width: 100%;
+}
+#icons-flex{
+  position: relative;
+  top: -0.5em;
+  display: flex;
+  justify-content: center;
+}
+#inlogo .icons{
+  width: 1em;
+  height: 0.9em;
+  margin: 0 0.2em;
+}
+#list{
+  position: absolute;
+  top: 0;
+  left: 5vw;
+  width: 40vw;
+}
+#list ul{
+  list-style: none;
+  width: auto;
+}
+#list li{
+  cursor: pointer;
+}
+#list li hr{
+  width: 0%;
+  -webkit-transition: width 0.2s;
+  transition: width 0.2s;
+}
+#list li a{
+  -webkit-text-stroke: 0.04em #fff;
+  text-stroke: 0.04em #fff;
+  transition: color 0.2s;
+  color: rgba(0,0,0,0);
+}
+#list li:hover{
+  color: #fff;
+}
+#list li:hover hr{
+  width: 25%;
+}
+#list li:hover a{
+  color: #fff;
+}
+
+@media (min-width: 768px) and (max-width: 1024px){
+  #footer{
+    font-size: 3.7vw;
+  }
+  #links{
+    width: 30%;
+  }
+  #title{
+    width: 40%;
+  }
+  #social{
+    width: 25%
+  }
+  #fullmenu{
+    font-size: 6vw;
+  }
+  #inlogo{
+    top: 5vw;
+    width: 55vw;
+    left: 45vw;
+    height: 40vw;
+  }
+  #list{
+    top: 0;
+    left: 5vw;
+    width: 55vw;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 767px){
+  #footer{
+    font-size: 4.5vw;
+  }
+  #links{
+    width: 35%;
+  }
+  #title{
+    width: 45%;
+  }
+  #social{
+    width: 35%
+  }
+  #fullmenu{
+    font-size: 7vw;
+  }
+  #inlogo{
+    top: 0;
+    width: 80vw;
+    left: 10vw;
+    height: 45vw;
+  }
+  #list{
+    top: 45vw;
+    left: 20vw;
+    width: 60vw;
+  }
+}
+
+@media (max-width: 480px){
+  #footer{
+    font-size: 6vw;
+  }
+  #links{
+    width: 70%;
+  }
+  #title{
+    width: 70%;
+  }
+  #social{
+    width: 70%
+  }
+  #fullmenu{
+    font-size: 10vw;
+  }
+  #inlogo{
+    top: 10vw;
+    width: 100vw;
+    left: 0vw;
+    height: 55vw;
+  }
+  #list{
+    top: 65vw;
+    left: 5vw;
+    width: 90vw;
+  }
+}

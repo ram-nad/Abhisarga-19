@@ -6,16 +6,16 @@
     font-size: 2.3vw;
   }
   #poster{
-    height: 75vw;
+    height: 65vw;
   }
   #logo{
-    top: 5vw;
+    top: 0;
     width: 55vw;
     left: 45vw;
     height: 40vw;
   }
   #heading{
-    top: 25vw;
+    top: 15vw;
     left: 5vw;
     height: 50vw;
     width: 45vw;
@@ -29,8 +29,8 @@
     font-size: 6.5vw;
   }
   .eventcards{
-    width: 45vw;
-    height: 50vw;
+    width: 35vw;
+    height: 45vw;
   }
   #footer{
     font-size: 3.7vw;
@@ -128,16 +128,16 @@
     font-size: 3.3vw;
   }
   #poster{
-    height: 120vw;
+    height: 110vw;
   }
   #logo{
-    top: 10vw;
+    top: 0;
     width: 100vw;
-    left: 0vw;
+    left: 0;
     height: 55vw;
   }
   #heading{
-    top: 65vw;
+    top: 55vw;
     left: 10vw;
     height: 55vw;
     width: 90vw;
@@ -176,7 +176,7 @@
     height: 55vw;
   }
   #list{
-    top: 60vw;
+    top: 65vw;
     left: 5vw;
     width: 90vw;
   }

@@ -54,45 +54,11 @@ a{
   position: relative;
 }
 #poster{
-  height: 60vw;
-}
-#bar{
-  width: 100%;
-  font-size: 1.5vw;
-  background-color: #000;
-  height: 3.5em;
-  display: flex;
-  justify-content: flex-end;
-}
-#register{
-  color: #fff;
-  height: 3.5em;
-  width: 6em;
-  text-align: center;
-  font-weight: bold;
-}
-#menu{
-  height: 2.5em;
-  margin: 0.5em 1.2em;
-  width: 2.2em;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  cursor: pointer;
-}
-#menu div{
-  height: 5%;
-  background: #fff;
-  border: 0;
-  width: 100%;
-}
-#menu div:nth-child(2){
-  width: 80%;
-  align-self: flex-end;
+  height: 50vw;
 }
 #logo{
   position: absolute;
-  top: 5vw;
+  top: 0;
   left: 50vw;
   height: 30vw;
   width: 50vw;
@@ -104,7 +70,7 @@ a{
   width: 100%;
 }
 #heading{
-  top: 20vw;
+  top: 10vw;
   left: 5vw;
   height: 40vw;
   width: 45vw;
@@ -206,13 +172,13 @@ hr{
   position: relative;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
 }
 .eventcards{
-  width: 30vw;
-  height: 35vw;
+  width: 25vw;
+  height: 33vw;
   font-size: 0.4em;
-  margin: 2em 0;
+  margin: 1.5em 1em;
   color: #fff;
   background-color: #f00;
   position: relative;
@@ -262,7 +228,45 @@ hr{
   height: 1.4em;
   width: 5em;
 }
+#bar{
+  width: 100%;
+  position: relative;
+  font-size: 1.5vw;
+  background-color: #000;
+  height: 3.5em;
+  font-family: 'Content', sans-serif;
+}
+#register{
+  color: #fff;
+  height: 3.5em;
+  width: 6em;
+  text-align: center;
+  font-weight: bold;
+  float: right;
+}
+#menu{
+  height: 2.5em;
+  margin: 0.5em 1.2em;
+  width: 2.2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  cursor: pointer;
+  float: right;
+}
+#menu div{
+  height: 5%;
+  background: #fff;
+  border: 0;
+  width: 100%;
+}
+#menu div:nth-child(2){
+  width: 80%;
+  align-self: flex-end;
+}
 #footer{
+  width: 100%;
+  position: relative;
   font-size: 3vw;
   padding-top: 3em;
   color: #fff;
@@ -293,8 +297,8 @@ hr{
   padding-left: 0;
 }
 #footer img{
-  height: 0.9em;
-  width: 1.2em;
+  height: 1.2em;
+  width: 1.4em;
   padding: 0;
   margin: 0 0.2em;
 }
@@ -312,7 +316,7 @@ hr{
   right: 0;
   width: 0vw;
   height: 0vh;
-  background: rgba(0,0,0,0.95);
+  background: #000;
   border-bottom-left-radius: 100%;
   -webkit-transition: all 0.8s;
   transition: all 0.8s;
@@ -344,8 +348,8 @@ hr{
 }
 #inlogo{
   position: absolute;
-  top: 5vw;
-  left: 50vw;
+  top: 0;
+  left: 40vw;
   height: 30vw;
   width: 50vw;
   opacity: 0;
@@ -358,20 +362,20 @@ hr{
 }
 #icons-flex{
   position: relative;
-  top: -1em;
+  top: -0.5em;
   display: flex;
   justify-content: center;
 }
 #inlogo .icons{
-  width: 0.9em;
-  height: 0.7em;
+  width: 1em;
+  height: 0.9em;
   margin: 0 0.2em;
 }
 #list{
   position: absolute;
   top: 0;
   left: 5vw;
-  width: 50vw;
+  width: 40vw;
 }
 #list ul{
   list-style: none;
@@ -395,7 +399,7 @@ hr{
   color: #fff;
 }
 #list li:hover hr{
-  width: 20%;
+  width: 25%;
 }
 #list li:hover a{
   color: #fff;

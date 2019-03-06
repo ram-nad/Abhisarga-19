@@ -7,14 +7,11 @@ div{
   padding: 0;
   margin: 0;
 }
-#button{
-  font-size: 0.4em;
-  text-align: center;
-  padding: 0.1em;
-  margin: 1em auto 0;
-  border: 0.1em solid #fff;
-  height: 1.4em;
-  width: 5em;
+hr{
+  height: 0.1em;
+  background-color: #fff;
+  margin: 0;
+  border: 0;
 }
 #bar{
   width: 100%;
@@ -31,7 +28,15 @@ div{
 #register{
   color: #fff;
   height: 3.5em;
-  width: 6em;
+  width: 7em;
+  text-align: center;
+  font-weight: bold;
+  float: right;
+}
+#login{
+  color: #fff;
+  height: 3.5em;
+  width: 7em;
   text-align: center;
   font-weight: bold;
   float: right;
@@ -199,6 +204,9 @@ div{
 }
 
 @media (min-width: 768px) and (max-width: 1024px){
+  #bar{
+    font-size: 2.3vw;
+  }
   #footer{
     font-size: 3.7vw;
   }
@@ -228,6 +236,9 @@ div{
 }
 
 @media (min-width: 481px) and (max-width: 767px){
+  #bar{
+    font-size: 2.7vw;
+  }
   #footer{
     font-size: 4.5vw;
   }
@@ -257,6 +268,9 @@ div{
 }
 
 @media (max-width: 480px){
+  #bar{
+    font-size: 3.3vw;
+  }
   #footer{
     font-size: 6vw;
   }

@@ -115,7 +115,7 @@ hr{
 #desc{
   position: relative;
   top: 5em;
-  left: 4em;
+  left: 2em;
   width: 20em;
   height: 10em;
   font-size: 0.5em;
@@ -219,13 +219,19 @@ hr{
   font-weight: bold;
   list-style: none;
 }
+#button{
+  font-size: 0.4em;
+  text-align: center;
+  padding: 0.1em;
+  margin: 1em auto 0;
+  border: 0.1em solid #fff;
+  height: 1.4em;
+  width: 6.5em;
+}
 
 @media (min-width: 768px) and (max-width: 1024px){
   .stripe{
     width: 0.3vw;
-  }
-  #bar{
-    font-size: 2.3vw;
   }
   #poster{
     height: 65vw;
@@ -259,9 +265,6 @@ hr{
   .stripe{
     width: 0.4vw;
   }
-  #bar{
-    font-size: 2.7vw;
-  }
   #poster{
     height: 90vw;
   }
@@ -293,9 +296,6 @@ hr{
 @media (max-width: 480px){
   .stripe{
     width: 0.5vw;
-  }
-  #bar{
-    font-size: 3.3vw;
   }
   #poster{
     height: 110vw;

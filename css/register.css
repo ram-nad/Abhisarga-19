@@ -1,0 +1,156 @@
+body{
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  background: #05010b;
+}
+div{
+  padding: 0;
+  margin: 0;
+}
+a{
+  text-decoration: none;
+  color: #fff;
+}
+.obj{
+  position: absolute;
+}
+#triangle{
+  width: 15%;
+  left: -8%;
+  bottom: 10%;
+  transform: rotate(-15deg);
+}
+#circle{
+  width: 15%;
+  left: -10%;
+  transform: rotate(180deg);
+  top: 5%;
+}
+#rhombus{
+  width: 10%;
+  top: 35%;
+  right: -5%;
+}
+#formholder{
+  position: relative;
+  width: 100%;
+  height: 47vw;
+  font-size: 2.2vw;
+}
+#formlogo{
+  position: absolute;
+  top: 0;
+  left: 10vw;
+  height: 25vw;
+  width: 45vw;
+}
+#formlogo img{
+  height: 100%;
+  width: 100%;
+}
+#formdiv{
+  position: absolute;
+  top: 3em;
+  right: 5em;
+  width: 14em;
+  color: #fff;
+}
+#formdiv div{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  height: 1.2em;
+  margin: 0.2em 0;
+}
+#formdiv input{
+  margin: 0;
+  padding: 0;
+  font-size: 1em;
+  color: #fff;
+  outline: none;
+  background: rgba(0,0,0,0);
+  border: 0;
+  width: 10em;
+  height: 1.2em;
+  border-bottom: 0.1em solid #fff;
+}
+#formdiv label{
+  width: 1.8em;
+  height: 1.2em;
+}
+#formdiv label img{
+  width: 100%;
+  height: 100%;
+}
+#formdiv input::placeholder{
+  color: #fff;
+}
+#formdiv span{
+  font-size: 0.6em;
+  font-weight: bold;
+  width: 100%;
+  display: block;
+  text-align: center;
+}
+#formdiv button{
+  cursor: pointer;
+  font-size: 1em;
+  width: 5.4em;
+  background: #fff;
+  height: 1.4em;
+  padding: 0.1em 0 0.2em;
+  color: #000;
+  outline: none;
+  border: 0;
+  border-radius: 2em;
+}
+@media (min-width: 768px) and (max-width: 1024px){
+  #formholder{
+    font-size: 3vw;
+    height: 60vw;
+  }
+  #formlogo{
+    left: 0;
+    width: 50vw;
+    height: 30vw;
+  }
+}
+@media (min-width: 481px) and (max-width: 767px){
+  #formholder{
+    font-size: 3.8vw;
+    height: 110vw;
+  }
+  #formlogo{
+    left: 15vw;
+    width: 70vw;
+    height: 40vw;
+  }
+  #formdiv{
+    width: 60vw;
+    left: 20vw;
+    top: 45vw;
+  }
+  .obj{
+    display: none;
+  }
+}
+@media (max-width: 480px){
+  #formholder{
+    font-size: 4.5vw;
+    height: 135vw;
+  }
+  #formlogo{
+    left: 5vw;
+    width: 90vw;
+    height: 50vw;
+  }
+  #formdiv{
+    width: 80vw;
+    left: 10vw;
+    top: 55vw;
+  }
+  .obj{
+    display: none;
+  }
+}

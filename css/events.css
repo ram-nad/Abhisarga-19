@@ -11,6 +11,7 @@ body{
   margin: 0;
   padding: 0;
   background-color: #05010b;
+  overflow-x: hidden;
 }
 div{
   padding: 0;
@@ -117,7 +118,7 @@ a{
 .single-event{
   position: relative;
   height: 17em;
-  width: 21em;
+  width: 20em;
   margin: 1.5em auto;
 }
 .single-event h1{
@@ -132,7 +133,7 @@ a{
 .image{
   position: absolute;
   top: 3em;
-  left: 1em;
+  left: 0em;
   width: 9em;
   height: 13em;
 }
@@ -151,7 +152,7 @@ a{
 .event-details{
   position: absolute;
   top: 2em;
-  left: 9em;
+  left: 8em;
   height: 15em;
   width: 12em;
   background-image: linear-gradient(to bottom, #019386, #014a43);
@@ -245,7 +246,7 @@ a{
   #event-content{
     width: 100%;
     left: 0;
-    font-size: 5.3vw;
+    font-size: 5vw;
   }
   .single-event{
     width: 19em;

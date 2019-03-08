@@ -32,6 +32,7 @@ a{
 #register{
   color: #fff;
   height: 3.5em;
+  padding: 1.25em 0;
   width: 7em;
   text-align: center;
   font-weight: bold;
@@ -40,14 +41,15 @@ a{
 #login{
   color: #fff;
   height: 3.5em;
+  padding: 1.25em 0;
   width: 7em;
   text-align: center;
   font-weight: bold;
   float: right;
 }
 #menu{
-  height: 2.5em;
-  margin: 0.5em 1.2em;
+  height: 1.9em;
+  margin: 0.8em 1.2em;
   width: 2.2em;
   display: flex;
   flex-direction: column;
@@ -69,12 +71,12 @@ a{
   width: 100%;
   position: relative;
   font-size: 3vw;
-  padding-top: 3em;
+  padding-top: 4.5em;
   color: #fff;
   background: #212d40;
   clip-path: polygon(20% 0, 100% 30%, 100% 100%, 0 100%, 0 30%);
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   flex-wrap: wrap;
   font-family: 'Headings', sans-serif;
   font-weight: bolder;
@@ -86,7 +88,7 @@ a{
   width: 25%;
 }
 #title{
-  width: 35%;
+  width: 26%;
 }
 #social{
   width: 25%
@@ -98,14 +100,14 @@ a{
   padding-left: 0;
 }
 #footer img{
-  height: 1.2em;
-  width: 1.4em;
+  height: 1em;
+  width: 1em;
   padding: 0;
   margin: 0 0.2em;
 }
 #copyright{
   width: 100%;
-  margin-top: 0.6em;
+  margin-top: 1.5em;
   font-weight: lighter;
   font-size: 0.3em;
   text-align: center;
@@ -150,13 +152,10 @@ a{
 }
 #inlogo{
   position: absolute;
-  top: 0;
-  left: 40vw;
+  top: 5vw;
+  left: 5vw;
   height: 30vw;
   width: 50vw;
-  opacity: 0;
-  -webkit-transition: opacity 0.5s linear 0.8s;
-  transition: opacity 0.5s linear 0.8s;
 }
 #inlogo img{
   height: 85%;
@@ -176,7 +175,7 @@ a{
 #list{
   position: absolute;
   top: 0;
-  left: 5vw;
+  left: 50vw;
   width: 40vw;
 }
 #list ul{
@@ -213,15 +212,7 @@ a{
   }
   #footer{
     font-size: 3.7vw;
-  }
-  #links{
-    width: 30%;
-  }
-  #title{
-    width: 40%;
-  }
-  #social{
-    width: 25%
+    clip-path: polygon(25% 0, 100% 25%, 100% 100%, 0 100%, 0 25%);
   }
   #fullmenu{
     font-size: 6vw;
@@ -229,12 +220,12 @@ a{
   #inlogo{
     top: 5vw;
     width: 55vw;
-    left: 45vw;
+    left: 0vw;
     height: 40vw;
   }
   #list{
-    top: 0;
-    left: 5vw;
+    top: 5vw;
+    left: 50vw;
     width: 55vw;
   }
 }
@@ -245,12 +236,13 @@ a{
   }
   #footer{
     font-size: 4.5vw;
+    clip-path: polygon(35% 0, 100% 15%, 100% 100%, 0 100%, 0 15%);
   }
   #links{
     width: 35%;
   }
   #title{
-    width: 45%;
+    width: 35%;
   }
   #social{
     width: 35%
@@ -277,15 +269,16 @@ a{
   }
   #footer{
     font-size: 6vw;
+    clip-path: polygon(30% 0, 100% 10%, 100% 100%, 0 100%, 0 10%);
   }
   #links{
-    width: 70%;
+    width: 55%;
   }
   #title{
-    width: 70%;
+    width: 55%;
   }
   #social{
-    width: 70%
+    width: 55%
   }
   #fullmenu{
     font-size: 10vw;

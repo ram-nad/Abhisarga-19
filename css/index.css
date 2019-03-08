@@ -83,6 +83,7 @@ a{
   margin: 0;
   padding: 0;
   font-family: 'Headings', sans-serif;
+  letter-spacing: 0.08em;
 }
 #heading p{
   margin: 0;
@@ -90,10 +91,9 @@ a{
   color: rgba(0,0,0,0);
   text-stroke: 0.04em #fff;
   -webkit-text-stroke: 0.04em #fff;
-  text-align: center;
 }
 #about{
-  height: 75vw;
+  height: 65vw;
   font-size: 5vw;
 }
 #aboutus{
@@ -161,7 +161,7 @@ hr{
 #eventhead{
   position: relative;
   left: 1.2em;
-  margin-bottom: 1.5em;
+  margin-bottom: 1.1em;
   color: #fff;
   width: 6.5em;
   height: 1.2em;
@@ -207,11 +207,10 @@ hr{
   opacity: 0.6;
 }
 .eventcards p{
+  font-size: 0.9em;
   position: relative;
-  margin-bottom: 2.5em;
-  font-weight: bold;
-  text-align: justify;
-  margin: 0 0.2em;
+  margin-bottom: 3em;
+  margin: 0 0.4em;
 }
 .eventcards ul{
   line-height: 1.5em;
@@ -250,7 +249,7 @@ hr{
     font-size: 4.2vw;
   }
   #about{
-    height: 80vw;
+    height: 73vw;
     font-size: 6vw;
   }
   #events{
@@ -278,11 +277,11 @@ hr{
     top: 45vw;
     left: 10vw;
     height: 45vw;
-    width: 75vw;
+    width: 80vw;
     font-size: 5vw;
   }
   #about{
-    height: 85vw;
+    height: 80vw;
     font-size: 6.5vw;
   }
   #events{
@@ -308,14 +307,14 @@ hr{
   }
   #heading{
     top: 55vw;
-    left: 10vw;
+    left: 5vw;
     height: 55vw;
     width: 90vw;
     font-size: 5.5vw;
   }
   #about{
-    height: 95vw;
-    font-size: 8vw;
+    height: 90vw;
+    font-size: 7.8vw;
   }
   #events{
     font-size: 10vw;

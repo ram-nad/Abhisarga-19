@@ -5,7 +5,7 @@ function menuopen(){
   men.style.borderBottomLeftRadius = "0"
   document.getElementById('close').style.display = "block";
   document.getElementById('list').style.display = "block";
-  document.getElementById('inlogo').style.opacity = "1";
+  document.getElementById('inlogo').style.display = "block";
   document.body.style.overflowY = "hidden";
 }
 
@@ -16,6 +16,6 @@ function menuclose(){
   men.style.borderBottomLeftRadius = "100%";
   document.getElementById('close').style.display = "none";
   document.getElementById('list').style.display = "none";
-  document.getElementById('inlogo').style.opacity = "0";
+  document.getElementById('inlogo').style.display = "none";
   document.body.style.overflowY = "initial";
 }

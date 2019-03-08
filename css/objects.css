@@ -27,21 +27,21 @@
   transform: rotate(-30deg);
 }
 #guitar{
-  width: 17%;
-  bottom: -10%;
-  left: 50%;
+  width: 15%;
+  bottom: -15%;
+  left: 45%;
   transform: rotate(7deg);
 }
 #camera{
   width: 10%;
-  bottom: 15%;
+  bottom: 10%;
   left: 65%;
   transform: rotate(15deg);
 }
 #triangle{
   width: 15%;
   left: -8%;
-  bottom: 20%;
+  bottom: 10%;
   transform: rotate(-15deg);
 }
 #circle{

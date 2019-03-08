@@ -1,3 +1,7 @@
+@font-face {
+  font-family: 'Description';
+  src: url("fonts/AvenirLTStd-Book.otf") format("opentype");
+}
 body{
   margin: 0;
   padding: 0;
@@ -35,12 +39,12 @@ a{
 #formholder{
   position: relative;
   width: 100%;
-  height: 47vw;
+  height: 55vw;
   font-size: 2.2vw;
 }
 #formlogo{
   position: absolute;
-  top: 0;
+  top: 5vw;
   left: 10vw;
   height: 25vw;
   width: 45vw;
@@ -51,10 +55,11 @@ a{
 }
 #formdiv{
   position: absolute;
-  top: 3em;
-  right: 5em;
+  top: 5vw;
+  left: 55vw;
   width: 14em;
   color: #fff;
+  font-family: 'Description', sans-serif;
 }
 #formdiv div{
   width: 100%;
@@ -108,28 +113,33 @@ a{
 @media (min-width: 768px) and (max-width: 1024px){
   #formholder{
     font-size: 3vw;
-    height: 60vw;
+    height: 85vw;
   }
   #formlogo{
     left: 0;
+    top: 10vw;
     width: 50vw;
     height: 30vw;
+  }
+  #formdiv{
+    top: 10vw;
+    left: 50vw;
   }
 }
 @media (min-width: 481px) and (max-width: 767px){
   #formholder{
     font-size: 3.8vw;
-    height: 110vw;
+    height: 125vw;
   }
   #formlogo{
-    left: 15vw;
-    width: 70vw;
+    left: 10vw;
+    width: 80vw;
     height: 40vw;
   }
   #formdiv{
     width: 60vw;
     left: 20vw;
-    top: 45vw;
+    top: 50vw;
   }
   .obj{
     display: none;
@@ -138,17 +148,17 @@ a{
 @media (max-width: 480px){
   #formholder{
     font-size: 4.5vw;
-    height: 135vw;
+    height: 150vw;
   }
   #formlogo{
-    left: 5vw;
-    width: 90vw;
+    left: 0;
+    width: 100vw;
     height: 50vw;
   }
   #formdiv{
     width: 80vw;
     left: 10vw;
-    top: 55vw;
+    top: 60vw;
   }
   .obj{
     display: none;

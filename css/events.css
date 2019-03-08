@@ -29,11 +29,10 @@ a{
 }
 #listnav{
   position: fixed;
-  top: 7vw;
-  left: 0.5em;
+  top: 7.5vw;
+  left: 2em;
   font-size: 2.7vw;
   width: 11em;
-  background: rgba(0,0,0,0.7);
 }
 #listnav ul{
   list-style: none;
@@ -47,15 +46,17 @@ a{
   box-sizing: border-box;
   width: 100%;
   padding: 0 1em;
-  margin: 0.3em 0;
+  margin: 0.5em 0;
   color: rgba(0,0,0,0);
   text-stroke: 0.03em #fff;
   -webkit-text-stroke: 0.03em #fff;
   transition: color 0.5s;
+  -webkit-transition: color 0.5s;
 }
 .nav-link hr{
   width: 0;
   transition: width 0.5s;
+  -webkit-transition: width 0.5s;
 }
 .nav-link:hover{
   color: #fff;
@@ -71,6 +72,7 @@ a{
 }
 #select-list{
   display: none;
+  width: 100%;
   justify-content: center;
   font-size: 3vw;
   padding-top: 1.3em;
@@ -90,7 +92,7 @@ a{
   padding: 0;
   margin: 0;
   padding-bottom: 0.1em;
-  padding-right: 1em;
+  padding-right: 1.3em;
   border-bottom: 0.1em solid #fff;
   background: rgba(0,0,0,0);
   color: #fff;
@@ -106,35 +108,46 @@ a{
 }
 #event-content{
   position: relative;
-  left: 40%;
+  left: 35%;
   width: 60%;
   font-size: 2.5vw;
 }
 .events-internal{
+  margin-bottom: 3em;
   position: relative;
   width: 100%;
   color: #fff;
 }
 .single-event{
   position: relative;
-  height: 17em;
-  width: 20em;
+  height: 19em;
+  width: 21em;
   margin: 1.5em auto;
 }
 .single-event h1{
+  position: relative;
   margin: 0;
   padding: 0;
   font-size: 1em;
   font-weight: bold;
   width: 100%;
-  text-align: center;
   font-family: 'Headings', sans-serif;
+}
+.single-event h1::after{
+  position: absolute;
+  content: " ";
+  bottom: -0.1em;
+  left: 0;
+  width: 2em;
+  height: 0.1em;
+  background: #fff;
+  border: 0;
 }
 .image{
   position: absolute;
   top: 3em;
   left: 0em;
-  width: 9em;
+  width: 12em;
   height: 13em;
 }
 .image img{
@@ -151,17 +164,17 @@ a{
 }
 .event-details{
   position: absolute;
-  top: 2em;
+  top: 1.5em;
   left: 8em;
-  height: 15em;
-  width: 12em;
+  height: 16em;
+  width: 13em;
   background-image: linear-gradient(to bottom, #019386, #014a43);
   font-family: 'Description', sans-serif;
   font-weight: bold;
 }
 .event-details p{
-  font-size: 0.65em;
-  padding: 0.6em;
+  font-size: 0.68em;
+  padding: 0.7em;
 }
 .s-info{
   font-size: 0.7em;
@@ -174,13 +187,13 @@ a{
   position: absolute;
   height: 100%;
   width: 1em;
-  left: 0;
+  left: 1em;
   top: 0;
 }
 .s-info span{
   position: absolute;
   width: 10em;
-  left: 2em;
+  left: 3em;
   height: 1.3em;
   padding: 0.1em 2em;
 }
@@ -205,19 +218,20 @@ a{
   height: 1.6em;
   padding: 0.1em 0;
   display: inline-block;
-  margin: 1em 0.9em;
+  margin: 1em 1.3em;
   border: 0.1em solid #fff;
-  border-radius: 1.2em;
+  border-radius: 1.5em;
   cursor: pointer;
 }
 @media (min-width: 768px) and (max-width: 1024px){
   #listnav{
-    top: 10vw;
+    top: 11.4vw;
+    left: 0.5em;
     font-size: 3vw;
   }
   #event-content{
-    width: 68%;
-    left: 32%;
+    width: 65%;
+    left: 30%;
     font-size: 3vw;
   }
 }
@@ -249,16 +263,15 @@ a{
     font-size: 5vw;
   }
   .single-event{
-    width: 19em;
-    height: 20em;
+    width: 19.5em;
+    height: 21em;
   }
   .image{
     top: 2em;
-    width: 10em;
-    left: 4.5em;
+    left: 3.5em;
   }
   .event-details{
     top: 5em;
-    left: 3.5em;
+    left: 3em;
   }
 }

@@ -87,6 +87,7 @@ a{
   padding: 0;
 }
 #accomodation-content li{
+  display: inline-block;
   margin: 0;
   padding: 0;
   font-size: 1.2em;

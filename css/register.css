@@ -55,7 +55,7 @@ a{
 }
 #formdiv{
   position: absolute;
-  top: 5vw;
+  top: 2vw;
   left: 55vw;
   width: 14em;
   color: #fff;
@@ -113,7 +113,7 @@ a{
 @media (min-width: 768px) and (max-width: 1024px){
   #formholder{
     font-size: 3vw;
-    height: 85vw;
+    height: 75vw;
   }
   #formlogo{
     left: 0;
@@ -122,14 +122,14 @@ a{
     height: 30vw;
   }
   #formdiv{
-    top: 10vw;
+    top: 3vw;
     left: 50vw;
   }
 }
 @media (min-width: 481px) and (max-width: 767px){
   #formholder{
     font-size: 3.8vw;
-    height: 125vw;
+    height: 135vw;
   }
   #formlogo{
     left: 10vw;
@@ -148,7 +148,7 @@ a{
 @media (max-width: 480px){
   #formholder{
     font-size: 4.5vw;
-    height: 150vw;
+    height: 160vw;
   }
   #formlogo{
     left: 0;

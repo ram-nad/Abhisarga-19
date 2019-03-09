@@ -17,7 +17,7 @@
 		<script src="js/menu.js"></script>
     <script src="js/events.js"></script>
   </head>
-  <body>
+  <body onload="initialize()">
 		<div id="bar">
 			<img src="img/default-logo.png" alt="Abhisarga 2K19" id="bar-logo">
 			<div id="menu" onclick="menuopen()">
@@ -62,11 +62,26 @@
 							<span><img src="img/svg/calender.svg" alt="">29 March, 2019</span>
 							<span><img src="img/svg/rupee.svg" alt="">50,000</span>
 						</div>
-						<div class="b-link">
-							<a href="">Register</a>
+						<div class="b-link event-register">
+							Register
 						</div>
-						<div class="b-link">
-							<a href="">Rules</a>
+						<div class="b-link event-rules">
+							Rules
+						</div>
+					</div>
+					<div class="modal-rules">
+						<div class="modal-rules-container">
+							<div class="modal-close">
+							</div>
+							<h1>Rules and Regulations</h1>
+							<div class="moadal-rules-content">
+								<ul>
+									<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
+									<li>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+									<li>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</li>
+									<li>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</li>
+								</ul>
+							</div>
 						</div>
 					</div>
 				</div>

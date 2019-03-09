@@ -14,3 +14,26 @@ function changeselect(param){
   document.getElementById('eventselect').value = param.value;
   changecontent();
 }
+
+function initialize(){
+  var rules = document.getElementsByClassName('event-rules');
+  for(i=0; i<rules.length; i++){
+    rules[i].addEventListener('click', function(){
+      this.parentElement.parentElement.getElementsByClassName('modal-rules')[0].style.display = "block";
+    });
+  }
+  var modals = document.getElementsByClassName('modal-rules');
+  for(i=0; i<modals.length; i++){
+    modals[i].addEventListener('click', function(event){
+      if(event.target == this){
+        this.style.display = "none";
+      }
+    });
+  }
+  var closebutton = document.getElementsByClassName('modal-close');
+  for(i=0; i<closebutton.length; i++){
+    closebutton[i].addEventListener('click', function(){
+      this.parentElement.parentElement.style.display = "none";
+    });
+  }
+}

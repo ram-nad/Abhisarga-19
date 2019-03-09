@@ -223,7 +223,7 @@ a{
   border-radius: 1.5em;
   cursor: pointer;
 }
-.modal-rules{
+.modal{
   display: none;
   top: 0;
   left: 0;
@@ -233,7 +233,7 @@ a{
   height: 100vh;
   background: rgba(0,0,0,0.5);
 }
-.modal-rules-container{
+.modal-container{
   position: absolute;
   top: 3vw;
   left: 10vw;
@@ -242,7 +242,8 @@ a{
   font-size: 2vw;
   background: #0b527d;
   -webkit-animation: animatezoom 0.6s;
-  animation: animatezoom 0.6s
+  animation: animatezoom 0.6s;
+  overflow-y: scroll;
 }
 .modal-close{
   cursor: pointer;
@@ -270,7 +271,7 @@ a{
   top: 0.75em;
   transform: rotate(-45deg);
 }
-.modal-rules-container h1{
+.modal-container h1{
   position: relative;
   margin: 1em 0;
   height: 1.1em;
@@ -281,7 +282,7 @@ a{
   text-align: center;
   color: #fff;
 }
-.modal-rules-container h1::after{
+.modal-container h1::after{
   position: absolute;
   content: "";
   width: 35%;
@@ -290,12 +291,90 @@ a{
   bottom: 0;
   background: #fff;
 }
-.modal-rules-content{
+.modal-content{
   box-sizing: border-box;
   position: relative;
   width: 90%;
   left: 5%;
   color: #fff;
+}
+.register-form{
+  font-size: 1em;
+  width: 100%;
+  color: #fff;
+  font-family: 'Description', sans-serif;
+  margin-top: 2.5em;
+}
+.register-form .one-field{
+  position: relative;
+  font-size: 1em;
+  display: block;
+  width: 10em;
+  margin: 0 0.5em;
+  height: 1.2em;
+}
+.register-form div{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 0.8em 0;
+}
+.register-form input{
+  margin: 0;
+  padding: 0;
+  margin-left: 1.8em;
+  font-size: 1em;
+  color: #fff;
+  outline: none;
+  background: rgba(0,0,0,0);
+  border: 0;
+  width: 8em;
+  height: 1.2em;
+  border-bottom: 0.1em solid #fff;
+}
+.register-form label{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 1.4em;
+  height: 1.2em;
+}
+.register-form label img{
+  width: 100%;
+  height: 100%;
+}
+.register-form span{
+  height: 1.2em;
+  font-size: 0.7em;
+  font-weight: bold;
+  display: block;
+}
+.register-form .register-checkbox{
+  cursor: pointer;
+  box-sizing: border-box;
+  font-size: 1em;
+  margin-right: 1em;
+  width: 1.2em;
+  height: 1.2em;
+  border: 0.1em solid #fff;
+  display: inline;
+  color: rgba(0,0,0,0);
+}
+.register-form input::placeholder{
+  color: #fff;
+}
+.register-form button{
+  box-sizing: border-box;
+  cursor: pointer;
+  font-size: 1em;
+  width: 7em;
+  background: #fff;
+  height: 1.2em;
+  padding: 0.1 0;
+  color: #000;
+  outline: none;
+  border: 0;
+  border-radius: 2em;
 }
 @-webkit-keyframes animatezoom{
   from {-webkit-transform: scale(0)}
@@ -316,7 +395,7 @@ a{
     left: 30%;
     font-size: 3vw;
   }
-  .modal-rules-container{
+  .modal-container{
     top: 3vw;
     left: 5vw;
     width: 90vw;
@@ -337,7 +416,7 @@ a{
     left: 5%;
     font-size: 4.2vw;
   }
-  .modal-rules-container{
+  .modal-container{
     top: 4vw;
     left: 5vw;
     width: 90vw;
@@ -370,11 +449,11 @@ a{
     top: 5em;
     left: 3em;
   }
-  .modal-rules-container{
+  .modal-container{
     top: 6vw;
     left: 5vw;
     width: 90vw;
     height: 130vw;
-    font-size: 4.3vw;
+    font-size: 4vw;
   }
 }

@@ -131,7 +131,7 @@ a{
   background: #05010b;
   border-radius: 5%;
   -webkit-animation: animatezoom 0.6s;
-  animation: animatezoom 0.6s
+  animation: animatezoom 0.6s;
 }
 .modal-close{
   cursor: pointer;

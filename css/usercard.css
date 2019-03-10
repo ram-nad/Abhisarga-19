@@ -1,0 +1,158 @@
+@font-face {
+  font-family: 'Description';
+  src: url("fonts/AvenirLTStd-Book.otf") format("opentype");
+}
+div{
+  margin: 0;
+  padding: 0;
+}
+a{
+  text-decoration: none;
+  color: #fff;
+}
+.user-card{
+  display: inline-block;
+  margin: 1em 2em;
+  font-size: 1em;
+  position: relative;
+  height: 21em;
+  width: 16em;
+  border-radius: 3%;
+  overflow: hidden;
+  font-family: 'Description', sans-serif;
+}
+.user-card .user-full{
+  height: 7em;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: linear-gradient(to top, #2de173, #0847fc 90%);
+  transition: height 0.3s;
+  -webkit-transition: height 0.3s;
+  overflow: hidden;
+}
+.user-card:hover .user-full{
+  height: 21em;
+  background-image: linear-gradient(to top, #2de173, #0847fc);
+}
+.user-card .user-image{
+  height: 6em;
+  width: 6em;
+  box-sizing: border-box;
+  margin: 0.5em auto;
+  border-radius: 50%;
+  border: 0.1em solid #014a43;
+  overflow: hidden;
+  position: relative;
+}
+.user-card .user-image img{
+  position: absolute;
+  left: -2%;
+  top: -2%;
+  width: 104%;
+  height: 104%;
+}
+.user-card .user-hidden{
+  height: 14em;
+  width: 100%;
+  position: relative;
+  box-sizing: border-box;
+  color: #fff;
+}
+.user-card .user-hidden h1{
+  box-sizing: content-box;
+  position: relative;
+  font-size: 1.8em;
+  text-align: center;
+  height: 1em;
+  padding: 0.3em 0;
+  margin: 0;
+  color: inherit;
+  line-height: normal;
+}
+.user-card .user-hidden h2{
+  position: relative;
+  font-size: 1.3em;
+  text-align: center;
+  height: 1em;
+  padding: 0.1em 0;
+  margin: 0;
+}
+.user-card .user-hidden h1::after{
+  content: "";
+  position: absolute;
+  bottom: 0.25em;
+  width: 40%;
+  left: 30%;
+  height: 0.05em;
+  background: #fff;
+}
+.user-card .user-contact{
+  position: relative;
+  width: 100%;
+  top: 1em;
+}
+.user-card .user-phone, .user-email{
+  width: 100%;
+  padding-left: 0.5em;
+  padding-top: 0.8em;
+  margin: 0.4em 0;
+  margin-left: 1em;
+  height: 1.1em;
+  font-weight: bold;
+  position: relative;
+}
+.user-card .user-phone::before{
+  content: "phone";
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 0.8em;
+}
+.user-card .user-email::before{
+  content: "email";
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 0.8em;
+}
+.user-card .user-social{
+  display: flex;
+  justify-content: flex-start;
+  height: 1.6em;
+  padding: 0.1em 0;
+  margin: 0.9em 0;
+  margin-left: 2em;
+}
+.user-card .user-social img{
+  height: 1.4em;
+  width: 1.4em;
+  margin: 0 0.3em;
+}
+.user-card .user-details{
+  box-sizing: border-box;
+  height: 14em;
+  width: 16em;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background: #fff;
+  color: #000;
+}
+.user-card .user-details h1{
+  box-sizing: content-box;
+  font-size: 1.8em;
+  text-align: center;
+  height: 1em;
+  padding: 0.3em 0;
+  margin: 0;
+  padding-bottom: 0.7em;
+  color: inherit;
+}
+.user-card .user-details p{
+  font-size: 0.95em;
+  margin: 0;
+  padding: 1em 1em;
+  text-align: justify;
+}

@@ -1,0 +1,113 @@
+@font-face {
+  font-family: 'Headings';
+  font-weight: bold;
+  src: url("fonts/Objective-ExtraBold.otf") format("opentype");
+}
+body{
+  padding: 0;
+  margin: 0;
+  background: #05010b;
+  overflow-x: hidden;
+}
+div{
+  margin: 0;
+  padding: 0;
+}
+a{
+  text-decoration: none;
+  color: #fff;
+}
+.contact-head{
+  box-sizing: border-box;
+  position: relative;
+  width: 100%;
+  font-size: 2vw;
+  padding-top: 1em;
+  padding-left: 2em;
+  color: #fff;
+  font-family: 'Headings', sans-serif;
+}
+.contact-head > h1{
+  position: relative;
+  font-size: 1.8em;
+  padding: 0;
+  padding-top: 1em;
+  margin: 0;
+  height: 1.1em;
+  width: 11em;
+}
+.contact-head h1::after{
+  position: absolute;
+  content: "";
+  width: 20%;
+  height: 0.1em;
+  left: 0;
+  bottom: 0;
+  background: #fff;
+}
+.contact-head > p{
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+  margin: 1em 0;
+  line-height: 1.2em;
+}
+.contact-department{
+  position: relative;
+  width: 100%;
+  font-size: 2vw;
+  margin: 2em 0;
+  font-family: 'Headings', sans-serif;
+}
+.contact-department > h1{
+  position: relative;
+  box-sizing: border-box;
+  font-size: 1.4em;
+  padding: 0 0 0.5em;
+  margin: 0;
+  margin-left: 1.5em;
+  line-height: 1.2em;
+  color: #fff;
+}
+.contact-department > h1::after{
+  position: absolute;
+  content: "";
+  top: 1.05em;
+  width: 2em;
+  height: 0.1em;
+  left: 0;
+  background: #fff;
+}
+.contact-cards{
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 80%;
+  font-size: 0.6em;
+  margin: 0 10%;
+}
+@media (min-width: 768px) and (max-width: 1024px){
+  .contact-head{
+    font-size: 2.8vw;
+  }
+  .contact-department{
+    font-size: 2.6vw;
+  }
+}
+@media (min-width: 481px) and (max-width: 767px){
+  .contact-head{
+    font-size: 3.6vw;
+  }
+  .contact-department{
+    font-size: 3.5vw;
+  }
+}
+@media (max-width: 480px){
+  .contact-head{
+    font-size: 4.8vw;
+  }
+  .contact-department{
+    font-size: 4.6vw;
+  }
+}

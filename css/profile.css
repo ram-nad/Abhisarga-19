@@ -1,0 +1,222 @@
+body{
+  padding: 0;
+  margin: 0;
+  background: #05010b;
+  overflow-x: hidden;
+}
+div{
+  margin: 0;
+  padding: 0;
+}
+a{
+  text-decoration: none;
+  color: #fff;
+}
+#profile-content{
+  position: relative;
+  width: 100%;
+  color: #fff;
+}
+#account{
+  position: absolute;
+  font-size: 1.8vw;
+  width: 17em;
+  left: 2vw;
+  top: 1vw;
+}
+#profile-image{
+  position: relative;
+  width: 8em;
+  height: 8em;
+  margin: 0.5em auto;
+  border-radius: 50%;
+  border: 0.1em solid #fff;
+  color: #fff;
+}
+#profile-image img{
+  width: 7em;
+  height: 7em;
+  position: absolute;
+  top: 0.5em;
+  left: 0.5em;
+  border-radius: 50%;
+}
+#profile-name{
+  position: relative;
+  width: 90%;
+  height: 1.5em;
+  box-sizing: border-box;
+  padding: 0.25em 1em;
+  text-align: center;
+  font-weight: bold;
+  margin: 0 auto;
+}
+#profile-name img{
+  position: absolute;
+  width: 1em;
+  height: 1em;
+  top: 0.25em;
+  right: 0;
+}
+#profile-college{
+  position: relative;
+  width: 90%;
+  margin: 0 auto;
+  height: 3em;
+  box-sizing: border-box;
+  padding: 0 1em;
+  text-align: center;
+}
+#profile-college img{
+  position: absolute;
+  width: 1em;
+  height: 1em;
+  top: 0.25em;
+  right: 0;
+}
+#reg-events{
+  position: relative;
+  font-size: 1.5vw;
+  top: 2vw;
+  left: 40vw;
+  width: 60vw;
+}
+#reg-events > h1{
+  font-size: 1.7em;
+  padding: 0;
+  margin: 0;
+  height: 1.1em;
+  position: relative;
+}
+#reg-events > h1::after{
+  position: absolute;
+  content: "";
+  width: 1.5em;
+  height: 0.1em;
+  bottom: 0;
+  left: 0;
+  background: #fff;
+}
+#reg-events > ul{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+.single-reg-event{
+  position: relative;
+  width: 100%;
+  margin: 1em 0;
+  box-sizing: border-box;
+  padding-left: 2em;
+}
+.single-reg-event > h1{
+  position: relative;
+  font-size: 1.5em;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  padding-left: 1em;
+  margin-bottom: 0.6em;
+  height: 1em;
+}
+.single-reg-event > h1 img{
+  position: absolute;
+  height: 1em;
+  width: 0.6em;
+  left: 0;
+  top: 0;
+}
+.single-reg-event > img{
+  width: 0.8em;
+  position: absolute;
+  height: 4.2em;
+  top: 2.4em;
+  left: 7em;
+}
+.single-reg-event  > span{
+  position: relative;
+  height: 1em;
+  margin: 0;
+  padding: 0.2em 0;
+  left: 6.5em;
+  padding-left: 2.2em;
+  font-weight: bold;
+  display: block;
+}
+.single-reg-event span > img{
+  position: absolute;
+  height: 1em;
+  top: 0.2em;
+  left: 0;
+  width: 1em;
+}
+.single-reg-event > ul{
+  list-style-position: inside;
+  position: relative;
+  font-size: 0.85em;
+  left: 8em;
+  width: 22em;
+  padding: 0;
+  margin: 0;
+  margin-left: 3em;
+}
+.single-reg-event > ul li{
+  width: 9em;
+  display: inline-block;
+  margin: 0.3em 0;
+  font-weight: bold;
+  padding: 0;
+  height: 1em;
+  padding-left: 1.3em;
+  position: relative;
+}
+.single-reg-event > ul img{
+  position: absolute;
+  width: 1em;
+  height: 1em;
+  left: 0;
+  top: 0;
+}
+@media (min-width: 768px) and (max-width: 1024px){
+  #account{
+    font-size: 2vw;
+    left: 1vw;
+    top: 1vw;
+  }
+  #reg-events{
+    font-size: 1.8vw;
+    left: 35vw;
+    width: 65vw;
+  }
+}
+@media (min-width: 481px) and (max-width: 767px){
+  #account{
+    position: relative;
+    font-size: 2.8vw;
+    margin: 0 auto;
+    top: 2vw;
+  }
+  #reg-events{
+    font-size: 2.5vw;
+    left: 10vw;
+    top: 4vw;
+    width: 80vw;
+    margin-bottom: 8vw;
+  }
+}
+@media (max-width: 480px){
+  #account{
+    position: relative;
+    font-size: 3.7vw;
+    margin: 0 auto;
+    top: 3vw;
+  }
+  #reg-events{
+    font-size: 3.5vw;
+    left: 5vw;
+    top: 6vw;
+    width: 90vw;
+    margin-bottom: 10vw;
+  }
+}

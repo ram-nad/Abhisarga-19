@@ -3,6 +3,12 @@
   src: url("fonts/AvenirLTStd-Book.otf") format("opentype");
 }
 @font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src: url("fonts/Montserrat-Regular.woff2") format("woff2");
+}
+@font-face {
   font-family: 'Headings';
   font-weight: bold;
   src: url("fonts/Objective-ExtraBold.otf") format("opentype");
@@ -28,11 +34,11 @@ a{
   color: #fff;
 }
 #listnav{
-  position: fixed;
+  position: absolute;
   top: 7.5vw;
   left: 2em;
   font-size: 2.7vw;
-  width: 11em;
+  width: 12em;
 }
 #listnav ul{
   list-style: none;
@@ -173,15 +179,18 @@ a{
   font-weight: bold;
 }
 .event-details p{
-  font-size: 0.68em;
+  font-size: 0.7em;
   padding: 0.7em;
+  height: 12.5em;
+  overflow-y: scroll;
 }
 .s-info{
   font-size: 0.7em;
-  position: relative;
+  position: absolute;
   width: 15em;
   height: 3em;
   margin: 0.1em auto;
+  bottom: 4em;
 }
 .s-info img{
   position: absolute;
@@ -211,6 +220,7 @@ a{
   width: 1em;
 }
 .b-link{
+  position: absolute;
   font-size: 0.7em;
   box-sizing: border-box;
   text-align: center;
@@ -218,10 +228,17 @@ a{
   height: 1.6em;
   padding: 0.1em 0;
   display: inline-block;
-  margin: 1em 1.3em;
+  margin: 0.5em 1.3em;
   border: 0.1em solid #fff;
   border-radius: 1.5em;
   cursor: pointer;
+  bottom: 0.3em;
+}
+.event-register{
+  left: 0;
+}
+.event-rules{
+  right: 0;
 }
 .modal{
   display: none;
@@ -298,6 +315,10 @@ a{
   left: 5%;
   color: #fff;
 }
+.modal-content ul li{
+  padding: 0.2em 0.1em;
+  font-family: 'Montserrat', sans-serif;
+}
 .register-form{
   font-size: 1em;
   width: 100%;
@@ -310,7 +331,7 @@ a{
   font-size: 1em;
   display: block;
   width: 10em;
-  margin: 0 0.5em;
+  margin: 0.4em 0.5em;
   height: 1.2em;
 }
 .register-form div{
@@ -387,8 +408,8 @@ a{
 @media (min-width: 768px) and (max-width: 1024px){
   #listnav{
     top: 11.4vw;
-    left: 0.5em;
-    font-size: 3vw;
+    left: 0;
+    font-size: 2.7vw;
   }
   #event-content{
     width: 65%;

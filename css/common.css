@@ -70,7 +70,7 @@ a{
 #footer{
   width: 100%;
   position: relative;
-  font-size: 3vw;
+  font-size: 2.5vw;
   padding-top: 4.5em;
   color: #fff;
   background: #212d40;
@@ -113,7 +113,7 @@ a{
   text-align: center;
 }
 #fullmenu{
-  font-size: 5vw;
+  font-size: 4.2vw;
   position: fixed;
   top: 0;
   right: 0;
@@ -211,11 +211,11 @@ a{
     font-size: 2.3vw;
   }
   #footer{
-    font-size: 3.7vw;
+    font-size: 3.3vw;
     clip-path: polygon(25% 0, 100% 25%, 100% 100%, 0 100%, 0 25%);
   }
   #fullmenu{
-    font-size: 6vw;
+    font-size: 5vw;
   }
   #inlogo{
     top: 5vw;
@@ -235,7 +235,7 @@ a{
     font-size: 2.7vw;
   }
   #footer{
-    font-size: 4.5vw;
+    font-size: 4vw;
     clip-path: polygon(35% 0, 100% 15%, 100% 100%, 0 100%, 0 15%);
   }
   #links{
@@ -248,7 +248,7 @@ a{
     width: 35%
   }
   #fullmenu{
-    font-size: 7vw;
+    font-size: 5.5vw;
   }
   #inlogo{
     top: 0;
@@ -257,7 +257,7 @@ a{
     height: 45vw;
   }
   #list{
-    top: 45vw;
+    top: 40vw;
     left: 20vw;
     width: 60vw;
   }
@@ -268,7 +268,7 @@ a{
     font-size: 3.3vw;
   }
   #footer{
-    font-size: 6vw;
+    font-size: 5vw;
     clip-path: polygon(30% 0, 100% 10%, 100% 100%, 0 100%, 0 10%);
   }
   #links{
@@ -281,7 +281,7 @@ a{
     width: 55%
   }
   #fullmenu{
-    font-size: 10vw;
+    font-size: 7vw;
   }
   #inlogo{
     top: 10vw;
@@ -294,4 +294,18 @@ a{
     left: 5vw;
     width: 90vw;
   }
+}
+.scrollbar::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #F5F5F5;
+}
+.scrollbar::-webkit-scrollbar
+{
+	width: 6px;
+	background-color: #F5F5F5;
+}
+.scrollbar::-webkit-scrollbar-thumb
+{
+	background-color: #000000;
 }

@@ -1,4 +1,10 @@
 @font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src: url("fonts/Montserrat-Regular.woff2") format("woff2");
+}
+@font-face {
   font-family: 'Content';
   font-weight: bold;
   src: url("fonts/Anodina-ExtraBold.otf") format("opentype");
@@ -6,7 +12,7 @@
 @font-face {
   font-family: 'Headings';
   font-weight: bold;
-  src: url("fonts/overpass-heavy.otf") format("opentype");
+  src: url("fonts/Objective-ExtraBold.otf") format("opentype");
 }
 @font-face {
   font-family: 'Tags';
@@ -79,18 +85,19 @@ a{
 }
 #heading h1{
   color: #fff;
-  font-size: 1.8em;
+  font-size: 2em;
   margin: 0;
   padding: 0;
   font-family: 'Headings', sans-serif;
-  letter-spacing: 0.08em;
 }
 #heading p{
   margin: 0;
-  padding: 0.25em;
+  padding: 0.5em;
   color: rgba(0,0,0,0);
   text-stroke: 0.04em #fff;
+  font-size: 0.85em;
   -webkit-text-stroke: 0.04em #fff;
+  font-family: 'Headings', sans-serif;
 }
 #about{
   height: 65vw;
@@ -207,16 +214,34 @@ hr{
   opacity: 0.6;
 }
 .eventcards p{
-  font-size: 0.9em;
+  font-size: 0.75em;
+  line-height: 1.3em;
   position: relative;
   margin-bottom: 3em;
   margin: 0 0.4em;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
 }
 .eventcards ul{
-  line-height: 1.5em;
+  font-size: 0.9em;
+  line-height: 1.4em;
   position: relative;
   font-weight: bold;
   list-style: none;
+  list-style-position: outside;
+  font-family: 'Montserrat', sans-serif;
+}
+.eventcards ul li{
+  position: relative;
+  padding-left: 1.5em;
+}
+.eventcards ul li::before{
+  position: absolute;
+  content: "+";
+  color: #fff;
+  font-size: 1.1em;
+  top: 0;
+  left: 0;
 }
 #button{
   font-size: 0.4em;
@@ -243,7 +268,7 @@ hr{
   }
   #heading{
     top: 15vw;
-    left: 5vw;
+    left: 2vw;
     height: 50vw;
     width: 45vw;
     font-size: 4.2vw;

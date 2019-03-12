@@ -35,7 +35,7 @@
     <div id="select-list">
 			<select id="eventselect" onchange="changecontent()">
 				<option value="0">Dance & Music</option>
-				<option value="1">Literary</option>
+				<option value="1">Literary & Cinema</option>
 				<option value="2">Fine Arts</option>
 				<option value="3">Gaming</option>
 				<option value="4">Online</option>
@@ -52,7 +52,7 @@
 						<div></div>
 					</div>
 					<div class="event-details">
-						<p>
+						<p class="scrollbar">
 							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 							Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
 							Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
@@ -70,12 +70,16 @@
 						</div>
 					</div>
 					<div class="modal modal-rules">
-						<div class="modal-container">
+						<div class="modal-container scrollbar">
 							<div class="modal-close">
 							</div>
 							<h1>Rules and Regulations</h1>
-							<div class="moadal-content">
+							<div class="modal-content">
 								<ul>
+									<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
+									<li>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+									<li>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</li>
+									<li>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</li>
 									<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
 									<li>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
 									<li>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</li>
@@ -85,21 +89,18 @@
 						</div>
 					</div>
 					<div class="modal modal-register">
-						<div class="modal-container">
+						<div class="modal-container scrollbar">
 							<div class="modal-close">
 							</div>
 							<h1>Inter College Dance Competition</h1>
-							<div class="moadal-content">
+							<div class="modal-content">
 								<div class="register-rules">
 								</div>
 								<div class="register-form">
 									<form action="" method="post">
 										<div>
 											<div class="one-field">
-						            <label for="name"><img src="img/svg/name.svg" alt=""></label><input type="text" placeholder="Name" name="name">
-						          </div>
-						          <div class="one-field">
-						            <label for="email"><img src="img/svg/email.svg" alt=""></label><input type="email" placeholder="E-mail" name="email">
+						            <label for="name"><img src="img/svg/name.svg" alt=""></label><input type="text" placeholder="Team Name" name="name">
 						          </div>
 										</div>
 										<div>
@@ -112,18 +113,18 @@
 										</div>
 										<div>
 											<div class="one-field">
-						            <label for="name"><img src="img/svg/name.svg" alt=""></label><input type="text" placeholder="Name" name="name">
+						            <label for="name"><img src="img/svg/name.svg" alt=""></label><input type="text" placeholder="Name (Optional)" name="name">
 						          </div>
 						          <div class="one-field">
-						            <label for="email"><img src="img/svg/email.svg" alt=""></label><input type="email" placeholder="E-mail" name="email">
+						            <label for="email"><img src="img/svg/email.svg" alt=""></label><input type="email" placeholder="E-mail (Optional)" name="email">
 						          </div>
 										</div>
 										<div>
 											<div class="one-field">
-						            <label for="name"><img src="img/svg/name.svg" alt=""></label><input type="text" placeholder="Name" name="name">
+						            <label for="name"><img src="img/svg/name.svg" alt=""></label><input type="text" placeholder="Name (Optional)" name="name">
 						          </div>
 						          <div class="one-field">
-						            <label for="email"><img src="img/svg/email.svg" alt=""></label><input type="email" placeholder="E-mail" name="email">
+						            <label for="email"><img src="img/svg/email.svg" alt=""></label><input type="email" placeholder="E-mail (Optional)" name="email">
 						          </div>
 										</div>
 					          <div>
@@ -157,7 +158,7 @@
 					<hr align="left" width="20%">
 				</div>
 				<ul>
-					<li><a href="#">Accomodation</a></li>
+					<li><a href="#">Accommodation</a></li>
 					<li><a href="#">Team</a></li>
 					<li><a href="#">Contact Us</a></li>
 				</ul>
@@ -169,7 +170,7 @@
 				</div>
 				<ul>
 					<li><a href="#">Events</a></li>
-					<li><a href="#">Sponsers</a></li>
+					<li><a href="#">Sponsors</a></li>
 					<li><a href="#">Schedule</a></li>
 				</ul>
 			</div>
@@ -188,7 +189,7 @@
     <div id="listnav">
       <ul>
         <li class="nav-link active-link" value="0" onclick="changeselect(this)">Dance & Music<hr></li>
-        <li class="nav-link" value="1" onclick="changeselect(this)">Literary<hr></li>
+        <li class="nav-link" value="1" onclick="changeselect(this)">Literary & Cinema<hr></li>
         <li class="nav-link" value="2" onclick="changeselect(this)">Fine Arts<hr></li>
         <li class="nav-link" value="3" onclick="changeselect(this)">Gaming<hr></li>
         <li class="nav-link" value="4" onclick="changeselect(this)">Online<hr></li>
@@ -212,7 +213,8 @@
 				<ul>
 					<li><a href="">Home</a><hr></li>
 					<li><a href="">Events</a><hr></li>
-					<li><a href="">Accomodation</a><hr></li>
+					<li><a href="">Proshows</a><hr></li>
+					<li><a href="">Accommodation</a><hr></li>
 					<li><a href="">Sponsors</a><hr></li>
 					<li><a href="">Team</a><hr></li>
 					<li><a href="">Contact Us</a><hr></li>

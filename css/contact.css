@@ -1,0 +1,117 @@
+@font-face {
+  font-family: 'Contact';
+  src: url("fonts/Objective-ExtraBold.otf") format("opentype");
+}
+body{
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  background: #05010b;
+}
+div{
+  padding: 0;
+  margin: 0;
+}
+a{
+  text-decoration: none;
+  color: #fff;
+}
+#full{
+  width: 100%;
+  position: relative;
+  height: 50vw;
+}
+#contact-head{
+  box-sizing: border-box;
+  position: relative;
+  width: 100%;
+  font-size: 2vw;
+  padding-left: 2em;
+  color: #fff;
+  font-family: 'Contact', sans-serif;
+}
+#contact-head > h1{
+  position: relative;
+  font-size: 1.8em;
+  padding: 0;
+  padding-top: 1em;
+  margin: 0;
+  height: 1.2em;
+  width: 8em;
+}
+#contact-head h1::after{
+  position: absolute;
+  content: "";
+  width: 15%;
+  height: 0.1em;
+  left: 0;
+  bottom: 0;
+  background: #fff;
+}
+#contact-head p{
+  margin: 0;
+  padding: 0;
+  font-size: 0.8em;
+  padding-top: 1em;
+  padding-left: 2em;
+  line-height: 1.3em;
+}
+#contact-head p a{
+  position: relative;
+  margin-left: 2.3em;
+  padding-left: 1.4em;
+  font-size: 0.8em;
+}
+#contact-head p a img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 1em;
+  width: 1em;
+}
+#googlemaps{
+  position: absolute;
+  top: 5vw;
+  width: 40vw;
+  left: 55vw;
+  height: 40vw;
+}
+@media (min-width: 768px) and (max-width: 1024px){
+  #full{
+    height: 75vw;
+  }
+  #contact-head{
+    font-size: 3vw;
+  }
+  #googlemaps{
+    left: 55vw;
+  }
+}
+@media (min-width: 481px) and (max-width: 767px){
+  #full{
+    height: 195vw;
+  }
+  #contact-head{
+    font-size: 4.8vw;
+  }
+  #googlemaps{
+    top: 110vw;
+    left: 12.5vw;
+    width: 75vw;
+    height: 75vw;
+  }
+}
+@media (max-width: 480px){
+  #full{
+    height: 245vw;
+  }
+  #contact-head{
+    font-size: 6vw;
+  }
+  #googlemaps{
+    top: 145vw;
+    left: 5vw;
+    width: 90vw;
+    height: 90vw;
+  }
+}

@@ -70,13 +70,13 @@ a{
 #footer{
   width: 100%;
   position: relative;
-  font-size: 2.5vw;
+  font-size: 2vw;
   padding-top: 4.5em;
   color: #fff;
   background: #212d40;
   clip-path: polygon(20% 0, 100% 30%, 100% 100%, 0 100%, 0 30%);
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   flex-wrap: wrap;
   font-family: 'Headings', sans-serif;
   font-weight: bolder;
@@ -85,13 +85,13 @@ a{
   width: 9em;
 }
 #links{
-  width: 25%;
+  width: 20%;
 }
 #title{
-  width: 26%;
+  width: 23%;
 }
 #social{
-  width: 25%
+  width: 15%
 }
 #footer ul{
   font-size: 0.8em;
@@ -109,7 +109,7 @@ a{
   width: 100%;
   margin-top: 1.5em;
   font-weight: lighter;
-  font-size: 0.3em;
+  font-size: 0.5em;
   text-align: center;
 }
 #fullmenu{
@@ -211,7 +211,7 @@ a{
     font-size: 2.3vw;
   }
   #footer{
-    font-size: 3.3vw;
+    font-size: 2.4vw;
     clip-path: polygon(25% 0, 100% 25%, 100% 100%, 0 100%, 0 25%);
   }
   #fullmenu{
@@ -235,17 +235,17 @@ a{
     font-size: 2.7vw;
   }
   #footer{
-    font-size: 4vw;
+    font-size: 3vw;
     clip-path: polygon(35% 0, 100% 15%, 100% 100%, 0 100%, 0 15%);
   }
   #links{
-    width: 35%;
+    width: 25%;
   }
   #title{
-    width: 35%;
+    width: 27%;
   }
   #social{
-    width: 35%
+    width: 18%
   }
   #fullmenu{
     font-size: 5.5vw;
@@ -268,17 +268,17 @@ a{
     font-size: 3.3vw;
   }
   #footer{
-    font-size: 5vw;
+    font-size: 3.5vw;
     clip-path: polygon(30% 0, 100% 10%, 100% 100%, 0 100%, 0 10%);
   }
   #links{
-    width: 55%;
+    width: 30%;
   }
   #title{
-    width: 55%;
+    width: 30%;
   }
   #social{
-    width: 55%
+    width: 20%
   }
   #fullmenu{
     font-size: 7vw;

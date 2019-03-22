@@ -80,6 +80,7 @@ a{
   top: 2vw;
   left: 40vw;
   width: 60vw;
+  min-height: 33vw;
 }
 #reg-events > h1{
   font-size: 1.7em;

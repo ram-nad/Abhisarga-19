@@ -253,6 +253,47 @@ hr{
   width: 6.5em;
 }
 
+#popup{
+  position: fixed;
+  bottom: 1vw;
+  right: 3vw;
+  width: 17vw;
+  background: #0b527d;
+  color: #fff;
+  font-size: 1vw;
+}
+#popup h1{
+  margin: 0.5em 0;
+  padding: 0 0.5em;
+  text-align: center;
+}
+#popup div{
+  position: absolute;
+  right: 0;
+  height: 1em;
+  width: 1em;
+  cursor: pointer;
+}
+#popup hr{
+  height: 0.2em;
+  border: 0;
+  outline: 0;
+  position: absolute;
+  top: 0.5em;
+  width: 100%;
+}
+#popup hr:nth-of-type(1){
+  transform: rotate(45deg);
+}
+#popup hr:nth-of-type(2){
+  transform: rotate(-45deg);
+}
+#popup p{
+  font-size: 1.1em;
+  padding: 1em;
+  margin: 0;
+}
+
 @media (min-width: 768px) and (max-width: 1024px){
   .stripe{
     width: 0.3vw;
@@ -283,6 +324,10 @@ hr{
   .eventcards{
     width: 35vw;
     height: 45vw;
+  }
+  #popup{
+    width: 20vw;
+    font-size: 1.2vw;
   }
 }
 @media (min-width: 481px) and (max-width: 767px){
@@ -316,6 +361,12 @@ hr{
     width: 40vw;
     height: 50vw;
   }
+  #popup{
+    bottom: 0;
+    right: 10vw;
+    width: 80vw;
+    font-size: 1.6vw;
+  }
 }
 @media (max-width: 480px){
   .stripe{
@@ -347,5 +398,11 @@ hr{
   .eventcards{
     width: 60vw;
     height: 70vw;
+  }
+  #popup{
+    bottom: 0;
+    right: 0vw;
+    width: 100vw;
+    font-size: 2vw;
   }
 }

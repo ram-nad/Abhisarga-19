@@ -1,0 +1,66 @@
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src: url("fonts/Montserrat-Regular.woff2") format("woff2");
+}
+body{
+  margin: 0;
+  padding: 0;
+  background: #05010b;
+}
+div{
+  margin: 0;
+  padding: 0;
+}
+a{
+  text-decoration: none;
+  color: #fff;
+}
+.sponsorblock{
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.6vw;
+  width: 100%;
+  clear: both;
+}
+.sponsorblock h1{
+  position: relative;
+  font-size: 1.8em;
+  height: 1em;
+  font-weight: bold;
+  width: 100%;
+  padding: 0;
+  padding-bottom: 0.05em;
+  margin: 1em 0;
+  display: block;
+  text-align: center;
+}
+.sponsorblock h1::after{
+  content: "";
+  width: 4em;
+  height: 0.1em;
+  margin: 0 auto;
+  display: block;
+  background: #fff;
+}
+.sponsorblock img{
+  display: block;
+  width: 20em;
+  margin: 1em auto;
+}
+@media (min-width: 768px) and (max-width: 1024px){
+  .sponsorblock{
+    font-size: 2vw;
+  }
+}
+@media (min-width: 481px) and (max-width: 767px){
+  .sponsorblock{
+    font-size: 2.4vw;
+  }
+}
+@media (max-width: 480px){
+  .sponsorblock{
+    font-size: 2.9vw;
+  }
+}

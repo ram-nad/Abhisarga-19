@@ -129,14 +129,11 @@ a{
   top: 0;
 }
 .deregister{
-  position: absolute;
   font-size: 0.7em;
   padding: 0;
-  margin: 0;
+  margin: 0 auto;
   height: 2.5em;
   width: 9em;
-  top: 2.6em;
-  left: 27em;
   border-radius: 0.6em;
   outline: 0;
   border: 0;
@@ -144,6 +141,8 @@ a{
   font-weight: bold;
   background: #f0544e;
   cursor: pointer;
+  margin-top: 2em;
+  display: block;
 }
 .single-reg-event > img{
   width: 0.8em;
@@ -157,7 +156,7 @@ a{
   height: 1em;
   margin: 0;
   padding: 0.2em 0;
-  width: 8em;
+  width: 10em;
   left: 6.5em;
   padding-left: 2.2em;
   font-weight: bold;
@@ -175,13 +174,13 @@ a{
   position: relative;
   font-size: 0.85em;
   left: 8em;
-  width: 22em;
+  width: 31em;
   padding: 0;
   margin: 0;
   margin-left: 3em;
 }
 .single-reg-event > ul li{
-  width: 9em;
+  width: 14em;
   display: inline-block;
   margin: 0.3em 0;
   font-weight: bold;
@@ -223,6 +222,9 @@ a{
     width: 80vw;
     margin-bottom: 8vw;
   }
+  .single-reg-event > ul{
+    width: 18em;
+  }
 }
 @media (max-width: 480px){
   #account{
@@ -232,10 +234,13 @@ a{
     top: 3vw;
   }
   #reg-events{
-    font-size: 3.5vw;
-    left: 5vw;
+    font-size: 3.2vw;
+    left: 1vw;
     top: 6vw;
-    width: 90vw;
+    width: 98vw;
     margin-bottom: 10vw;
+  }
+  .single-reg-event > ul{
+    width: 18em;
   }
 }

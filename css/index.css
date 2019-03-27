@@ -261,15 +261,12 @@ hr{
   background: #0b527d;
   color: #fff;
   font-size: 1vw;
+  overflow-x: hidden;
 }
-#popup h1{
-  margin: 0.5em 0;
-  padding: 0 0.5em;
-  text-align: center;
-}
-#popup div{
+#popup #cross{
   position: absolute;
   right: 0;
+  top: 0;
   height: 1em;
   width: 1em;
   cursor: pointer;
@@ -288,12 +285,35 @@ hr{
 #popup hr:nth-of-type(2){
   transform: rotate(-45deg);
 }
-#popup p{
+.popmessage{
+  position: relative;
+  width: 100%;
+  display: none;
+  -webkit-transition: all 2s;
+  transition: all 2s;
+}
+.popactive{
+  display: block;
+  -webkit-transition: all 2s;
+  transition: all 2s;
+}
+.popmessage h1{
+  margin: 0.5em 0;
+  padding: 0 0.5em;
+  text-align: center;
+}
+.popmessage p{
   font-size: 1.1em;
   padding: 1em;
   margin: 0;
 }
-
+.popmessage em{
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-size: 1.2em;
+  padding-bottom: 1em;
+}
 @media (min-width: 768px) and (max-width: 1024px){
   .stripe{
     width: 0.3vw;

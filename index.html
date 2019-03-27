@@ -16,8 +16,9 @@
     <link rel="stylesheet" type="text/css" href="css/objects.css">
     <link rel="stylesheet" type="text/css" href="css/common.css">
 		<script src="js/menu.js"></script>
+		<script src="js/index.js"></script>
   </head>
-  <body>
+  <body onload="initialize()">
     <div class="back">
       <div class="stripe"></div>
       <div class="stripe"></div>
@@ -222,15 +223,34 @@
 			</div>
 		</div>
 		<div id="popup">
-			<div onclick="document.getElementById('popup').style.display='none'">
+			<div onclick="closepop()" id="cross">
 				<hr>
 				<hr>
 			</div>
-			<h1>Registrations Open</h1>
-			<p>
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-				Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-			</p>
+			<div class="popmessage popactive">
+				<h1>Registrations Open</h1>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+					Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				</p>
+				<em> -- Abhisarga Team </em>
+			</div>
+			<div class="popmessage">
+				<h1>Registrations Closed</h1>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+					Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				</p>
+				<em> -- Website Team </em>
+			</div>
+			<div class="popmessage">
+				<h1>Registrations Open Again</h1>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+					Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				</p>
+				<em> -- Abhisarga Team </em>
+			</div>
 		</div>
   </body>
 </html>

@@ -271,6 +271,14 @@ hr{
   width: 1em;
   cursor: pointer;
 }
+#popup #next{
+  position: absolute;
+  right: 0.2em;
+  top: 50%;
+  height: 1em;
+  width: 1em;
+  cursor: pointer;
+}
 #popup hr{
   height: 0.2em;
   border: 0;
@@ -279,10 +287,18 @@ hr{
   top: 0.5em;
   width: 100%;
 }
-#popup hr:nth-of-type(1){
+#popup #next hr:nth-of-type(1){
+  transform-origin: right;
+  transform: rotate(30deg);
+}
+#popup #next hr:nth-of-type(2){
+  transform-origin: right;
+  transform: rotate(-30deg);
+}
+#popup #cross hr:nth-of-type(1){
   transform: rotate(45deg);
 }
-#popup hr:nth-of-type(2){
+#popup #cross hr:nth-of-type(2){
   transform: rotate(-45deg);
 }
 .popmessage{
@@ -304,8 +320,9 @@ hr{
 }
 .popmessage p{
   font-size: 1.1em;
-  padding: 1em;
+  padding: 0.7em 1.7em;
   margin: 0;
+  text-align: center;
 }
 .popmessage em{
   display: block;

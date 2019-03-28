@@ -8,9 +8,11 @@ function initialize(){
   box = document.getElementById("popup");
   msg = box.getElementsByClassName('popmessage');
   total = msg.length;
-  change_msg = setInterval(function(){
+  function change(){
     msg[current].classList.remove('popactive');
     current = (current+1)%total;
     msg[current].classList.add('popactive');
-  }, 15000)
+  }
+  change_msg = setInterval(change, 15000);
+  document.getElementById('next').addEventListener("click", change);
 }

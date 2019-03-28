@@ -224,7 +224,7 @@ a{
   font-size: 0.7em;
   box-sizing: border-box;
   text-align: center;
-  width: 6.4em;
+  width: 5.5em;
   height: 1.6em;
   padding: 0.1em 0;
   display: inline-block;
@@ -237,7 +237,12 @@ a{
 .event-register{
   left: 0;
 }
+.event-team{
+  width: 4em;
+  left: 6.9em;
+}
 .event-rules{
+  width: 4em;
   right: 0;
 }
 .modal{

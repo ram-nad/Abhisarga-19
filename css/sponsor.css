@@ -17,10 +17,34 @@ a{
   text-decoration: none;
   color: #fff;
 }
+.sponsorcategory{
+  font-family: 'Montserrat', sans-serif;
+  width: 100%;
+  font-size: 1.6vw;
+  padding: 1.2em 0;
+  color: #fff;
+}
+.sponsorcategory > h1{
+  position: relative;
+  margin: 0;
+  padding: 0;
+  font-size: 2em;
+  height: 1.2em;
+  margin-left: 0.8em;
+  display: block;
+}
+.sponsorcategory > h1::after{
+  position: absolute;
+  content: "";
+  width: 2.8em;
+  height: 0.1em;
+  bottom: 0;
+  left: 0;
+  background: #fff;
+}
 .sponsorblock{
   color: #fff;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 1.6vw;
+  font-size: 1em;
   width: 100%;
   clear: both;
 }
@@ -38,29 +62,33 @@ a{
 }
 .sponsorblock h1::after{
   content: "";
-  width: 4em;
+  width: 2.8em;
   height: 0.1em;
   margin: 0 auto;
   display: block;
   background: #fff;
 }
-.sponsorblock img{
+.sponsorblock a{
   display: block;
   width: 20em;
   margin: 1em auto;
 }
+.sponsorblock a img{
+  width: 100%;
+  height: 100%;
+}
 @media (min-width: 768px) and (max-width: 1024px){
-  .sponsorblock{
+  .sponsorcategory{
     font-size: 2vw;
   }
 }
 @media (min-width: 481px) and (max-width: 767px){
-  .sponsorblock{
+  .sponsorcategory{
     font-size: 2.4vw;
   }
 }
 @media (max-width: 480px){
-  .sponsorblock{
-    font-size: 2.9vw;
+  .sponsorcategory{
+    font-size: 3vw;
   }
 }

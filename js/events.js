@@ -28,6 +28,12 @@ function initialize(){
       this.parentElement.parentElement.getElementsByClassName('modal-register')[0].style.display = "block";
     });
   }
+  var team = document.getElementsByClassName('event-team');
+  for(i=0; i<team.length; i++){
+    team[i].addEventListener('click', function(){
+      this.parentElement.parentElement.getElementsByClassName('modal-team')[0].style.display = "block";
+    });
+  }
   var modals = document.getElementsByClassName('modal');
   for(i=0; i<modals.length; i++){
     modals[i].addEventListener('click', function(event){
